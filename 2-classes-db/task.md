@@ -61,12 +61,14 @@ To submit this homework write the correct commands after each question.
 
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
---    Month    | Monthly Spend 
--- ------------+---------------
---  March 2021 | £ 28,674,452
---  April 2021 | £ 22,895,194
--- (2 rows)
--- Can you work out how to do this?
+```
+   Month    | Monthly Spend 
+------------+---------------
+ March 2021 | £ 28,674,452
+ April 2021 | £ 22,895,194
+(2 rows)
+```
+Can you work out how to do this?
 
 ```sql
 
