@@ -1,9 +1,10 @@
 # Class Database
-Run the following command:
+Run the following commands:
 ```
-psql -f setup.sql
+createdb homework
+psql -d homework -f setup.sql
 ```
-This will create a database called homework.
+This will create and populate a database called homework.
 
 It is based on real data from the government found at
 https://data.gov.uk/dataset/72eaec8e-0d32-4041-a553-87b852abee64/spend-over-25-000-in-worcestershire-acute-hospitals-nhs-trust
