@@ -54,6 +54,7 @@ To submit this homework write the correct commands after each question.
     the supplier is 'COMPUTACENTER (UK) LTD' (id 16)
     the expense type is 'Computer Hardware Purch' (id 7)
     the expense area is 'ICT Contingency' (id 18)
+    for £32,000.
 ```sql
 
 ```
