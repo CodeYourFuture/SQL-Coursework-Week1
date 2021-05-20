@@ -525,58 +525,19 @@ INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transac
 
 
 -- Queries and taskes
--- Task-1
-SELECT date, transaction_no, description, amount  FROM spends WHERE amount > 30000 and amount < 31000;
--- 2ND-Sol
-SELECT date, transaction_no, description, amount  FROM spends WHERE amount BETWEEN 30000 AND 31000;
 
--- Task -2 
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE description LIKE '%fee%';
 
--- Task -3
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE description LIKE '%Fee%';
 
--- Task -4
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE description ILIKE '%fee%';
+
 
 -- SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE Lower(description)=LOWER('fee');
 
---Task -5
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE amount IN (25000, 30000, 35000, 40000);
-
-
---Task -6
-
-SELECT  s.date, s.description, s.amount, e.expense_area, sup.id
- FROM spends AS s
- INNER JOIN expense_areas As e ON s.expense_area_id = e.id 
- INNER JOIN suppliers As sup ON s.supplier_id = sup.id 
- WHERE expense_area ='Better Hospital Food';
-
--- Task - 7
-
-SELECT  s.date, sup.supplier, s.description, s.amount
- FROM spends AS s
- INNER JOIN expense_areas As e ON s.expense_area_id = e.id 
- INNER JOIN suppliers As sup ON s.supplier_id = sup.id 
- WHERE expense_area ='Better Hospital Food';
 
 
 
- -- Task - 8 
- INSERT INTO expense_types (expense_type) VALUES ('Computer Hardware Purch');
- INSERT INTO expense_areas (expense_area) VALUES ('ICT Contingency');
- INSERT INTO suppliers (supplier) VALUES ('COMPUTACENTER (UK) LTD');
- INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (7,18,16,'2021-04-01',38104091,'3780119655','Computer Hardware Dell',30925);
 
--- task -9
 
-SELECT date As, SUM(amount) 
- from spends 
- GROUP BY date;
 
- -- Task 10
- SELECT date As "Month", SUM(amount) as "Monthly Spend"
- from spends 
- GROUP BY date;
+
+
 
