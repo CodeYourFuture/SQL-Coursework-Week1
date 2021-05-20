@@ -540,4 +540,22 @@ SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  W
 -- SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE Lower(description)=LOWER('fee');
 
 --Task -5
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spend WHERE amount IN (25000, 30000, 35000, 40000);
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE amount IN (25000, 30000, 35000, 40000);
+
+
+--Task -6
+
+SELECT  s.date, s.description, s.amount, e.expense_area, sup.id
+ FROM spends AS s
+ INNER JOIN expense_areas As e ON s.expense_area_id = e.id 
+ INNER JOIN suppliers As sup ON s.supplier_id = sup.id 
+ WHERE expense_area ='Better Hospital Food';
+
+-- Task - 7
+
+SELECT  s.date, sup.supplier, s.description, s.amount
+ FROM spends AS s
+ INNER JOIN expense_areas As e ON s.expense_area_id = e.id 
+ INNER JOIN suppliers As sup ON s.supplier_id = sup.id 
+ WHERE expense_area ='Better Hospital Food';
+
