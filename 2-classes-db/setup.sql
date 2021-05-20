@@ -526,7 +526,9 @@ INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transac
 
 -- Queries and taskes
 -- Task-1
-SELECT date, transaction_no, description, amount  FROM spends WHERE amount > £30,000 and amount < £31,000;
+SELECT date, transaction_no, description, amount  FROM spends WHERE amount > 30000 and amount < 31000;
+-- 2ND-Sol
+SELECT date, transaction_no, description, amount  FROM spends WHERE amount BETWEEN 30000 AND 31000;
 
 -- Task -2 
 SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE description LIKE '%fee%';
@@ -560,20 +562,21 @@ SELECT  s.date, sup.supplier, s.description, s.amount
  WHERE expense_area ='Better Hospital Food';
 
 
--- ### 8. We have just received a late invoice for April! Add a new row to the spends table:
---     dated 1st April 2021
---     with a description of 'Computer Hardware Dell'
---     transaction number is 38104091 and the supplier's inv no is '3780119655'
---     the supplier is 'COMPUTACENTER (UK) LTD' (id 16)
---     the expense type is 'Computer Hardware Purch' (id 7)
---     the expense area is 'ICT Contingency' (id 18)
--- ```sql
 
--- ```
  -- Task - 8 
  INSERT INTO expense_types (expense_type) VALUES ('Computer Hardware Purch');
  INSERT INTO expense_areas (expense_area) VALUES ('ICT Contingency');
  INSERT INTO suppliers (supplier) VALUES ('COMPUTACENTER (UK) LTD');
  INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (7,18,16,'2021-04-01',38104091,'3780119655','Computer Hardware Dell',30925);
 
+-- task -9
+
+SELECT date As, SUM(amount) 
+ from spends 
+ GROUP BY date;
+
+ -- Task 10
+ SELECT date As "Month", SUM(amount) as "Monthly Spend"
+ from spends 
+ GROUP BY date;
 
