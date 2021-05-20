@@ -525,3 +525,19 @@ INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transac
 
 
 -- Queries and taskes
+-- Task-1
+SELECT date, transaction_no, description, amount  FROM spends WHERE amount > £30,000 and amount < £31,000;
+
+-- Task -2 
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE description LIKE '%fee%';
+
+-- Task -3
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE description LIKE '%Fee%';
+
+-- Task -4
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE description ILIKE '%fee%';
+
+-- SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE Lower(description)=LOWER('fee');
+
+--Task -5
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spend WHERE amount IN (25000, 30000, 35000, 40000);
