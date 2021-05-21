@@ -107,9 +107,8 @@ SELECT  s.date, sup.supplier, s.description, s.amount
 
 ```sql
  -- Task - 8
- INSERT INTO expense_types (expense_type) VALUES ('Computer Hardware Purch');
- INSERT INTO expense_areas (expense_area) VALUES ('ICT Contingency');
- INSERT INTO suppliers (supplier) VALUES ('COMPUTACENTER (UK) LTD');
+
+
  INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (7,18,16,'2021-04-01',38104091,'3780119655','Computer Hardware Dell',30925);
 
 
@@ -141,8 +140,8 @@ SELECT date As, SUM(amount)
 Can you work out how to do this?
 
 ```sql
- -- Task 10
- SELECT date As "Month", SUM(amount) as "Monthly Spend"
+ -- Task 10 cast(SUM(amount) as money)
+ SELECT date As "Month", cast(SUM(amount) as money) as "Monthly Spend"
  from spends
  GROUP BY date;
 
