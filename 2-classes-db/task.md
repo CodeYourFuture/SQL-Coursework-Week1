@@ -141,7 +141,8 @@ Can you work out how to do this?
 
 ```sql
  -- Task 10 cast(SUM(amount) as money)
- SELECT date As "Month", cast(SUM(amount) as money) as "Monthly Spend"
+
+SELECT to_char(date, 'MonthYYYY')  As "Month", cast(SUM(amount) as money) as "Monthly Spend"
  from spends
  GROUP BY date;
 
