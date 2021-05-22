@@ -524,13 +524,7 @@ INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transac
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (28,1,24,'2021-04-01',37900261,'064PY001526372112','National Insurance Contributions',3330925);
 
 
--- Queries and taskes
 
-
-
-
-
--- SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends  WHERE Lower(description)=LOWER('fee');
 
 
 
