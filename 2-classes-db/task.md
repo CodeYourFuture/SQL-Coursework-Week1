@@ -101,7 +101,7 @@ SELECT date, sum(amount) FROM spends GROUP BY date;
 Can you work out how to do this?
 
 ```sql
-
+select to_char(date(date), 'Mon YYYY') as "Month", cast(sum(amount) as money) as "Spend Monthly" from spends group by "Month";
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
