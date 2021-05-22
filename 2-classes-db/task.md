@@ -71,7 +71,7 @@ SELECT date as "Date", SUM(amount) as "Total Money Spent" FROM spends GROUP BY d
 Can you work out how to do this?
 
 ```sql
-SELECT TO_CHAR(date,'Month yyyy') as "Month", TO_CHAR(SUM(amount), '£999,999,999') as "Monthly Spend" FROM spends GROUP BY date;
+SELECT TO_CHAR(date,'FMMonth yyyy') as "Month", TO_CHAR(SUM(amount), 'FM£999,999,999') as "Monthly Spend" FROM spends GROUP BY date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
