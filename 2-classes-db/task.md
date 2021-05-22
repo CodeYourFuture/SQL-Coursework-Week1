@@ -1,7 +1,7 @@
 # Class Database
 Run the following command:
 ```
-psql -f setup.sql
+sql -f setup.sql
 ```
 This will create a database called homework.
 
