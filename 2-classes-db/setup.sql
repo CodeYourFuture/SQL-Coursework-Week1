@@ -1,3 +1,4 @@
+
 CREATE TABLE expense_types (
   id            SERIAL PRIMARY KEY,
   expense_type  VARCHAR(30) NOT NULL
@@ -521,3 +522,16 @@ INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transac
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (4,32,61,'2021-04-01',38000896,'11832','Performance Staff and equipments costs',2311856);
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (20,1,24,'2021-04-01',37900261,'064PY001526372112','Income Tax',2989772);
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (28,1,24,'2021-04-01',37900261,'064PY001526372112','National Insurance Contributions',3330925);
+
+
+
+
+
+
+
+
+
+
+
+
+
