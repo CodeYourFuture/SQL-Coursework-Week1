@@ -20,31 +20,43 @@ To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 
-```sql: SELECT date, transaction_no,description FROM spends WHERE amount  BETWEEN 30000 AND 31000;
+```sql:
+ SELECT date, transaction_no,description FROM spends WHERE amount  BETWEEN 30000 AND 31000;
 
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
-```sql: SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description LIKE '%fee%';
+```sql: 
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description LIKE '%fee%';
 
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
-```sql
+```sql:
+ SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description LIKE '%Fee%';
 
 ```
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
-```sql
+```sql:
+ SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE lower(description) LIKE '%fee%';
 
 ```
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
-```sql
+```sql:
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE amount IN ('25000', '30000', '35000', '40000');
 
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
-```sql
+```sql:
+ SELECT date, supplier_id, description, amount from spends
+ INNER JOIN expense_areas ON spends.expense_area_id = expense_areas.id
+ WHERE expense_area LIKE '%Better Hospital Food%';
 
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
-```sql
+```sql:
+ SELECT date, supplier, description, amount from spends
+ INNER JOIN suppliers ON spends.supplier_id = suppliers.id
+ INNER JOIN expense_areas ON spends.expense_area_id = expense_areas.id
+ WHERE expense_area LIKE '%Better Hospital Food%';
 
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
