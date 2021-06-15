@@ -75,6 +75,8 @@ ORDER BY date
 
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
+
+Select to_char(date, 'Month YYYY') AS month,to_char(SUM(amount),'£99,999,999') AS Mounthly_Spend FROM spends GROUP BY date;
 ```
    Month    | Monthly Spend 
 ------------+---------------
