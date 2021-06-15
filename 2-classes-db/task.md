@@ -20,30 +20,39 @@ To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 ```sql
-
+SELECT  date, transaction_no, description, amount FROM spends where amount BETWEEN 30000 AND 31000;
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
-
+SELECT  date, transaction_no, description, supplier_inv_no, amount FROM spends where description LIKE '%fee%';
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
-
+SELECT  date, transaction_no, description, supplier_inv_no, amount FROM spends where description LIKE '%Fee%';
 ```
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
 ```sql
-
+SELECT  date, transaction_no, description, supplier_inv_no, amount FROM spends where lower(description) LIKE '%fee%' 
 ```
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
 ```sql
-
+SELECT  date, transaction_no, description, supplier_inv_no, amount FROM spends where amount = 25000 or amount = 30000 or amount = 35000 or amount =40000 
+SELECT  date, transaction_no, description, supplier_inv_no, amount FROM spends where amount in (25000, 30000, 35000, 40000)
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 ```sql
-
+SELECT  spends.date, spends.supplier_id, spends.description, spends.amount 
+FROM spends 
+INNER JOIN expense_areas ON spends.expense_area_id = expense_areas.id 
+where expense_area = 'Better Hospital Food'
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 ```sql
+SELECT  spends.date, spends.description, spends.amount, suppliers.supplier 
+FROM spends 
+INNER JOIN expense_areas ON spends.expense_area_id = expense_areas.id 
+INNER JOIN suppliers ON suppliers.id = spends.supplier_id
+where expense_area = 'Better Hospital Food'
 
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
@@ -54,13 +63,20 @@ To submit this homework write the correct commands after each question.
     the expense type is 'Computer Hardware Purch' (id 7)
     the expense area is 'ICT Contingency' (id 18)
 ```sql
-
+INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, description, transaction_no, supplier_inv_no, amount) VALUES (7, 18, 16, '2021-04-01','Computer Hardware Dell', 38104091, 3780119655, 50);
 ```
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
+SELECT sum(amount), date
+FROM spends
+GROUP BY date
+ORDER BY date
+
 
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
+
+Select to_char(date, 'Month YYYY') AS month,to_char(SUM(amount),'£99,999,999') AS Mounthly_Spend FROM spends GROUP BY date;
 ```
    Month    | Monthly Spend 
 ------------+---------------
