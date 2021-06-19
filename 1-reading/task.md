@@ -6,5 +6,5 @@
 2.  Study the PostgreSQL documentation that covers provided functions and operators in SQL (https://www.postgresql.org/docs/current/functions.html):
     1.  Read the String Functions and Operators section.
     2.  Read the Date/Time Functions and Operators section.
-3.  Study the build-hotel.sql script used to create the sample database.  Compare it with the struture of the tables themselves.
+3.  Study the build-hotel.sql script used to create the sample database.  Compare it with the structure of the tables themselves.
 
