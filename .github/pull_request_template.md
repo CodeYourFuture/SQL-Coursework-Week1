@@ -16,21 +16,24 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Kara Howard
+- Your City: London
+- Your Slack Name: Kara Howard
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: SQL
+- Week: 1
 
 # Notes
 
 - What did you find easy?
+Select from where
 
 - What did you find hard?
+Figuring out the challenge question and formatting tables
 
 - What do you still not understand?
+Left and right joins
 
 - Any other notes?
