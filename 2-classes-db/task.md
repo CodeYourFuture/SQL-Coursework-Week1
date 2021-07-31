@@ -23,22 +23,24 @@ To submit this homework write the correct commands after each question.
 select date, transaction_no, description, amount 
 from spends s 
 where (amount > '30000' and amount < '31000');
-
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
 select date, transaction_no, supplier_inv_no, description, amount
 from spends s 
 where (description like '%fee%');
-
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
-
+select date, transaction_no, supplier_inv_no, description, amount
+from spends s 
+where (description like '%Fee%');
 ```
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
 ```sql
-
+select date, transaction_no, supplier_inv_no, description, amount
+from spends s 
+where (description ilike '%fee%');
 ```
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
 ```sql
