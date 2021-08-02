@@ -95,7 +95,9 @@ group by date;
 Can you work out how to do this?
 
 ```sql
-
+select date as Month , sum(amount) as Monthly_Spend 
+from spends 
+group by date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
