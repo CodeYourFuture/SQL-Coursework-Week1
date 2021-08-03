@@ -95,7 +95,7 @@ group by date;
 Can you work out how to do this?
 
 ```sql
-select date as Month , sum(amount) as Monthly_Spend 
+select to_char(date, 'Month YYYY') as "Month", to_char(sum(amount), '£ 99,999,999') as "Monthly Spend" 
 from spends 
 group by date;
 ```
