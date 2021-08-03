@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "jontaConnect",
+            "database": "cyf_hotel",
+            "username": "jonta",
+            "password": "Heugh"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "jontaConnect2",
+            "database": "homework",
+            "username": "jonta",
+            "password": "Heugh"
+        }
+    ]
+}
