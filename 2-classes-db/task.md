@@ -59,7 +59,7 @@ where expense_areas.expense_area = 'Better Hospital Food';
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 ```sql
-select date, description, amount 
+select date,supplier, description, amount 
 from spends 
 inner JOIN expense_areas 
 on spends.expense_area_id = expense_areas.id
