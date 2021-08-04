@@ -19,6 +19,16 @@
             "database": "homework",
             "username": "jonta",
             "password": "Heugh"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "JontaServer",
+            "database": "homework",
+            "username": "jonathanh",
+            "password": "Heugh"
         }
     ]
 }
