@@ -71,11 +71,14 @@ WHERE expense_area = 'Better Hospital Food';
     the expense type is 'Computer Hardware Purch' (id 7)
     the expense area is 'ICT Contingency' (id 18)
 ```sql
-
+INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) 
+VALUES (7,18,16,'2021-04-01',38104091,'3780119655','Computer Hardware Del',997522);
 ```
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
-
+SELECT date, sum(amount)
+FROM spends
+group by date(date);
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
 ```
