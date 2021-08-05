@@ -21,27 +21,35 @@ To submit this homework write the correct commands after each question.
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 
 ```sql
-SELECT date, transaction_no, description FROM spends WHERE amount BETWEEN 30000 AND 31000;
+SELECT date, transaction_no, description 
+FROM spends 
+WHERE amount BETWEEN 30000 AND 31000;
 ```
 
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 
 
 ```sql
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description LIKE '%fee%';
+SELECT date, transaction_no, supplier_inv_no, description, amount 
+FROM spends 
+WHERE description LIKE '%fee%';
 ```
 
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 
 
 ```sql
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description LIKE '%Fee%';
+SELECT date, transaction_no, supplier_inv_no, description, amount 
+FROM spends 
+WHERE description LIKE '%Fee%';
 ```
 
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
 
 ```sql
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description ~* 'fee';
+SELECT date, transaction_no, supplier_inv_no, description, amount 
+FROM spends 
+WHERE description ~* 'fee';
 ```
 
 
@@ -49,7 +57,9 @@ SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WH
 
 
 ```sql
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE amount = 25000 OR amount = 30000 OR amount = 35000 OR amount = 40000;
+SELECT date, transaction_no, supplier_inv_no, description, amount 
+FROM spends 
+WHERE amount = 25000 OR amount = 30000 OR amount = 35000 OR amount = 40000;
 ```
 
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
@@ -94,7 +104,9 @@ expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_in
 
 
 ```sql
-
+SELECT date, SUM(amount)
+FROM spends
+GROUP BY date;
 ```
 
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
@@ -108,6 +120,11 @@ expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_in
 Can you work out how to do this?
 
 ```sql
+SELECT
+TO_CHAR(date, 'Month 2021') AS "Month" , 
+TO_CHAR(SUM(amount), '£999,999,990D') "Monthly Spend"
+FROM spends 
+GROUP BY date;
 
 ```
 
