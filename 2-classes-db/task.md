@@ -129,7 +129,9 @@ To submit this homework write the correct commands after each question.
 Can you work out how to do this?
 
 ```sql
-    SELECT TO_CHAR(date, 'Month YYYY') AS "Month", COUNT(id) AS "Transactions", SUM(amount) AS "Monthly Spend"
+    SELECT TO_CHAR(date, 'Month YYYY') AS "Month",
+    COUNT(id) AS "Transactions",
+    CAST(SUM(amount) AS MONEY) AS "Monthly Spend"
     FROM spends
     GROUP BY date;
 ```
