@@ -67,6 +67,11 @@ To submit this homework write the correct commands after each question.
     SELECT date, transaction_no, supplier_inv_no, description, amount
     FROM spends
     WHERE amount = 25000 OR amount = 30000 OR amount = 35000 OR amount = 40000;
+
+    //SHORT-EFFICIENT CODE (COPIED)
+    SELECT date, transaction_no, supplier_inv_no, description, amount
+    FROM spends
+    WHERE amount IN(25000, 30000, 35000, 40000);
 ```
 
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
@@ -91,6 +96,12 @@ To submit this homework write the correct commands after each question.
     (SELECT id
     FROM expense_areas
     WHERE LOWER(expense_area) LIKE LOWER('%bEtter hoSpital fooD%'));
+
+    //OR (COPIED)
+    select spends.date, spends.supplier_id, spends.description, spends.amount, suppliers.supplier from
+    ((spends inner join expense_areas on spends.expense_area_id = expense_areas.id)
+    inner join suppliers on spends.supplier_id = suppliers.id)
+    WHERE expense_areas.expense_area = 'Better Hospital Food';
 ```
 
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
@@ -134,6 +145,11 @@ Can you work out how to do this?
     CAST(SUM(amount) AS MONEY) AS "Monthly Spend"
     FROM spends
     GROUP BY date;
+
+    //OR (COPIED)
+    select to_char(date, 'Month YYYY') as "Month", to_char(sum(amount), '£ 99,999,999') as "Monthly Spend"
+    from spends
+    group by date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
