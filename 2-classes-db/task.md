@@ -90,6 +90,10 @@ WHERE e_a.expense_area = 'Better Hospital Food';
 ```sql
 
 
+INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount)
+VALUES (7,18,16,'2021-04-01',38104091,3780119655,'Computer Hardware Dell', 1, 600);
+
+
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
 ```
