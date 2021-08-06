@@ -107,6 +107,10 @@ Can you work out how to do this?
 
 ```sql
 
+SELECT to_char(date, 'mon yyyy') As Month, to_char(SUM(amount), '£ 999,999,999') AS monthly_spend
+FROM spends
+GROUP BY date;
+
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
