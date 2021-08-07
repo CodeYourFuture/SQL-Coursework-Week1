@@ -43,11 +43,18 @@ select  date, transaction_no, supplier_inv_no, description ,amount from spends w
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 ```sql
-
+select spends.date, spends.supplier_id ,spends.description ,spends.amount 
+from spends 
+inner join expense_areas on spends.expense_area_id =expense_areas.id 
+where expense_areas.expense_area ='Better Hospital Food'
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 ```sql
-
+select spends.date, suppliers.supplier , spends.description ,spends.amount 
+from spends 
+inner join suppliers on spends.supplier_id =suppliers.id 
+inner join expense_areas on spends.expense_area_id =expense_areas .id 
+where expense_areas.expense_area ='Better Hospital Food'
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
     dated 1st April 2021
