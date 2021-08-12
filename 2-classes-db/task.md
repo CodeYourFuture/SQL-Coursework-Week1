@@ -106,6 +106,7 @@ Can you work out how to do this?
 
 ```sql
 
+SELECT TO_CHAR(date,'Month 2021') AS "Month",TO_CHAR(SUM(amount),'$999,999,990D') "Monthly spend" FROM spends GROUP BY date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
