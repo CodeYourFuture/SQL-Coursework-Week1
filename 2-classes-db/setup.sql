@@ -12,6 +12,7 @@ CREATE TABLE suppliers (
   id        SERIAL PRIMARY KEY,
   supplier  VARCHAR(60) NOT NULL
 );
+ 
 
 CREATE TABLE spends (
   id                SERIAL PRIMARY KEY,
