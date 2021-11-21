@@ -124,6 +124,7 @@ select sum(amount) as total_amount_spent,date  from spends group by date;
 Can you work out how to do this?
 
 ```sql
+SELECT TO_CHAR(date,'Month yyyy') as Month, cast(sum(amount) as money) as Monthly_Spend from spends group by date;
 
 ```
 
