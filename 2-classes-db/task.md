@@ -124,7 +124,12 @@ GROUP BY date;
 Can you work out how to do this?
 
 ```sql
-
+SELECT TO_CHAR(date::DATE,'Month yyyy') AS "Month",
+        TO_CHAR(SUM(amount),'£ 999,999,999' )AS "Monthly Spend"
+FROM spends
+GROUP BY date;
+-- https://www.postgresql.org/docs/9.1/functions-formatting.html#FUNCTIONS-FORMATTING-NUMERIC-TABLE  -->
+-- https://www.postgresqltutorial.com/postgresql-date/  -->
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
