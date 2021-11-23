@@ -96,6 +96,10 @@ WHERE expense_areas.expense_area ='Better Hospital Food';
     the expense area is 'ICT Contingency' (id 18)
 
 ```sql
+INSERT INTO spends(date, description, transaction_no, supplier_inv_no, supplier_id, expense_type_id, expense_area_id)
+VALUES('2021-04-01','Computer Hardware Dell',38104091,'7384',16,7,18)
+--ERROR:  null value in column "amount" violates not-null constraint
+--we can use 0 as a default value -->
 
 ```
 
