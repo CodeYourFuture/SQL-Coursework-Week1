@@ -108,7 +108,7 @@ INSERT INTO expense_areas (expense_area) VALUES ('Software Support and Licences'
 INSERT INTO expense_areas (expense_area) VALUES ('Sterile Services - Alex');
 INSERT INTO expense_areas (expense_area) VALUES ('Telephone Serv- Alex');
 INSERT INTO expense_areas (expense_area) VALUES ('Trust Wide Rates');
-INSERT INTO expense_areas (expense_area) VALUES ('Trustwide');
+INSERT INTO expense_areas (expense_area) VALUES ('Trust Wide Rates');
 INSERT INTO expense_areas (expense_area) VALUES ('WAN');
 INSERT INTO expense_areas (expense_area) VALUES ('WIFI');
 INSERT INTO expense_areas (expense_area) VALUES ('Xerox Contract');
