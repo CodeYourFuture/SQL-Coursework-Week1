@@ -151,6 +151,27 @@ SELECT spends.date,
     the expense area is 'ICT Contingency' (id 18)
 
 ```sql
+--Answer8
+
+INSERT INTO spends(date, description, transaction_no,supplier_inv_no,supplier_id, expense_type_id, expense_area_id,amount)
+VALUES('1 April 2021',
+       'Computer Hardware Dell',
+       38104091,
+       '3780119655',
+           (SELECT id
+            FROM suppliers
+            WHERE supplier ='COMPUTACENTER (UK) LTD'),
+           (SELECT id
+            FROM expense_types
+            WHERE expense_type = 'Computer Hardware Purch'),
+           (SELECT id
+            FROM expense_areas
+            WHERE expense_area = 'ICT Contingency'),
+           (SELECT amount
+            FROM spends
+            WHERE expense_type_id = 7
+                AND supplier_id = 16
+                AND expense_area_id = 18 ));
 
 ```
 
