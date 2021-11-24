@@ -83,7 +83,8 @@ GROUP BY date;
 Can you work out how to do this?
 
 ```sql
-
+SELECT to_char(date,'MonthYYYY'), to_char(SUM(amount), 'L999,999,999') FROM spends
+GROUP BY date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
