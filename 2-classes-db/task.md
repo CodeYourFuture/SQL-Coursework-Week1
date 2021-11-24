@@ -200,6 +200,9 @@ GROUP BY date;
 Can you work out how to do this?
 
 ```sql
+SELECT  to_char(date,'Mon YYYY'), to_char(sum(amount),'£L999G999G999D') AS total_amount_spent
+FROM spends
+GROUP BY  date;
 
 ```
 
