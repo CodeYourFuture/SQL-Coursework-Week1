@@ -54,12 +54,39 @@ where position('fee' in description)>0;
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 
 ```sql
+--Answer 3
+
+SELECT date, transaction_no,
+             supplier_inv_no,
+             description,
+             amount
+FROM spends
+where description LIKE '%Fee%';
+
+
 
 ```
 
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
 
 ```sql
+-- Answer4.
+
+SELECT date, transaction_no,
+             supplier_inv_no,
+             description,
+             amount
+FROM spends
+where description iLIKE '%fee%';
+
+--or
+
+SELECT date, transaction_no,
+             supplier_inv_no,
+             description,
+             amount
+FROM spends
+where position(lower('Fee') in lower(description))>0;
 
 ```
 
