@@ -41,7 +41,7 @@ SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WH
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 ```sql
-SELECT expense_areas.id, spends.date, spends.supplier_id, amount
+SELECT expense_areas.id, spends.date, spends.supplier_id, spends.amount
 FROM expense_areas 
 INNER JOIN spends ON expense_areas.id = spends.expense_area_id 
 WHERE expense_area = 'Better Hospital Food';
