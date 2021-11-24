@@ -22,11 +22,10 @@ To submit this homework write the correct commands after each question.
  ```sql 
  SELECT date, transaction_no, amount FROM spends WHERE amount >= 3000 AND amount <= 31000;
 
-
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
-
+SELECT date,transaction_no,supplier_inv_no,description,amount from spends where description LIKE '%fee%';
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
