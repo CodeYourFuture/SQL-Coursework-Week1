@@ -179,6 +179,12 @@ VALUES('1 April 2021',
 
 ```sql
 
+--Answer9
+
+SELECT date, SUM(amount) AS total_amount_spent
+FROM spends
+GROUP BY date;
+
 ```
 
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
