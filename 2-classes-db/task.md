@@ -97,6 +97,11 @@ SELECT date, SUM(amount) FROM spends GROUP BY date;
 Can you work out how to do this?
 
 ```sql
+SELECT 
+to_char(date, 'Month YYYY') AS "Month", 
+to_char(sum(amount), '£999,999,999,999D99') AS "Monthly Spend" 
+FROM spends 
+GROUP BY DATE;
 
 ```
 
