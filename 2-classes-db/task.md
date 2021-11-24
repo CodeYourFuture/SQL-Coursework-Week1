@@ -40,6 +40,14 @@ WHERE amount>= 30000
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 
 ```sql
+-- Answer2.
+
+SELECT date, transaction_no,
+             supplier_inv_no,
+             description,
+             amount
+FROM spends
+where position('fee' in description)>0;
 
 ```
 
