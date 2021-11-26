@@ -83,7 +83,7 @@ GROUP BY date;
 Can you work out how to do this?
 
 ```sql
-SELECT to_char(date,'MonthYYYY'), to_char(SUM(amount), 'L999,999,999') FROM spends
+SELECT to_char(date,'MonthYYYY') AS "Month", to_char(SUM(amount), 'L999,999,999') AS "Monthly Spend" FROM spends
 GROUP BY date;
 ```
 
