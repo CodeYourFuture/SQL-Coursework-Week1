@@ -1,0 +1,346 @@
+    date    |                         supplier                         |                                     description                                     | amount  |         expense_area          
+------------+----------------------------------------------------------+-------------------------------------------------------------------------------------+---------+-------------------------------
+ 2021-03-01 | OMNICELL LTD                                             | Omnicell automated pharmacy cabinets                                                |  109645 | Balance Sheet
+ 2021-03-01 | WYE VALLEY NHS TRUST                                     | BOWEL CANCER SCREENING PROGRAMME                                                    |   44000 | Bowel Cancer Screening Centre
+ 2021-03-01 | WYE VALLEY NHS TRUST                                     | BOWEL SCREENING AT ROSS                                                             |  122301 | Bowel Cancer Screening Centre
+ 2021-03-01 | INLAND REVENUE CIS                                       | Income Tax                                                                          | 3094950 | Balance Sheet
+ 2021-03-01 | INLAND REVENUE CIS                                       | National Insurance                                                                  | 3435364 | Balance Sheet
+ 2021-03-01 | NHS BUSINESS SERVICES AUTHORITY                          | Prescriptions                                                                       |   28700 | Balance Sheet
+ 2021-03-01 | FRESENIUS MEDICAL CARE UK LTD                            | Renal Central Delivery System                                                       |   29260 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   49651 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   51451 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   90657 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   44852 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   37876 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   75631 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   48845 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   90520 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   55941 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   92336 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   49152 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   32879 | Balance Sheet
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   85279 | Balance Sheet
+ 2021-03-01 | E MANTON LTD                                             | A Block Oncology                                                                    |   97004 | Balance Sheet
+ 2021-03-01 | E MANTON LTD                                             | A Block, Kidderminster Hospital Oncology refurbishment.                             |  254474 | Balance Sheet
+ 2021-03-01 | E MANTON LTD                                             | Refurbishment of Dirty Utilities at the Alexandra Hospital.                         |   76509 | Balance Sheet
+ 2021-03-01 | E MANTON LTD                                             | A Block, Kidderminster Hospital Oncology refurbishment.                             |   25891 | Balance Sheet
+ 2021-03-01 | INTERCLASS PLC                                           | Aconbury West works                                                                 |   38931 | Balance Sheet
+ 2021-03-01 | INTERCLASS PLC                                           | Works to Aconbury Boiler House.                                                     |  194657 | Balance Sheet
+ 2021-03-01 | INTERCLASS PLC                                           | Works to Aconbury Boiler House.                                                     |   43630 | Balance Sheet
+ 2021-03-01 | INTERCLASS PLC                                           | Works to Aconbury Boiler House.                                                     |  218150 | Balance Sheet
+ 2021-03-01 | INTERCLASS PLC                                           | Works to Aconbury Boiler House.                                                     |   33245 | Balance Sheet
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF 0227/2020 new ward                                                              |   77085 | Other Pass Throughs
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Charges for One-off Bullet payments                                                 |  373746 | Balance Sheet
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF FM/0034/18 - LV Panel                                                           |   32086 | Balance Sheet
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Current Year DAF Variations                                                         |   39661 | CVI's - DAF's 2007-08
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Passthrough costs related to Kings Court soft Service                               |   50968 | Other Pass Throughs
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Laundry volume                                                                      |   60000 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Meals Volume                                                                        |  105000 | Better Hospital Food
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Waste Volume                                                                        |   25000 | Newtown Acute Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Gas charges                                                                         |   35914 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |  116093 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |  113709 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |   26610 | Energy NTN
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |   37837 | Kidderminster Energy
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |   91940 | Energy-Rates- No Special
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |   31732 | Kidderminster Energy
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |   76865 | Energy-Rates- No Special
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Staff and Equipment Costs                                                           |  402901 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Staff and Equipment Costs                                                           | 2311856 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | HPV Cleans DAF                                                                      |   77744 | Other Pass Throughs
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | HPV Cleans DAF                                                                      |   59233 | Other Pass Throughs
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Meals Additional Variations                                                         |   32558 | Better Hospital Food
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Additional Cleans                                                                   |   42236 | Other Pass Throughs
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Additional Cleans                                                                   |  117952 | Other Pass Throughs
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Link bridge soft services provision                                                 |   45865 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Passthrough costs                                                                   |   25845 | Equipt WRH
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Current Year DAF Variations                                                         |   45657 | CVI's - DAF's 2007-08
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Charges for One-off Bullet payments                                                 |   68359 | COVID-19
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Reagents costs                                                                      |   38957 | Haematology
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF Temporary a/c units                                                             |   31891 | Newtown Equipt
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Reagents costs                                                                      |   95000 | Equipt WRH
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Charges for One-off Bullet payments                                                 |  188952 | Balance Sheet
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |  107011 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Gas charges                                                                         |   29362 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Electricity charges                                                                 |  171208 | Energy NTN
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Meals Volume                                                                        |  100000 | Better Hospital Food
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Waste Volume                                                                        |   25000 | Newtown Acute Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Laundry volume                                                                      |   72000 | PFI- Unitary Payments
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Passthrough costs - HPV Cleans                                                      |   35495 | COVID-19
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Passthrough costs - HPV Cleans                                                      |   25695 | Other Pass Throughs
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Passthrough costs - Amber/Additional cleans                                         |   43490 | COVID-19
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - Mulberry Suite                                                                |  145379 | Balance Sheet
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - COVID hangers                                                                 |  192563 | COVID-19
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - additional screens                                                            |   33959 | COVID-19
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF ICU bed bays                                                                    |  168186 | Balance Sheet
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - ARU Phase 2 works                                                             |   41692 | COVID-19
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - Kings Court Data Centre                                                       |   31197 | New Hospital Impl Admin
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - ED walkway                                                                    |   31168 | COVID-19
+ 2021-03-01 | XOGRAPH HEALTHCARE LTD                                   | Replacement of DR Rooms - Alexandra Hospital                                        |   35653 | Balance Sheet
+ 2021-03-01 | XOGRAPH HEALTHCARE LTD                                   | Replacement of DR Rooms - Alexandra Hospital                                        |  178267 | Balance Sheet
+ 2021-03-01 | MEDTRONIC LTD                                            | Medtronic patient consumables to include cannulas, reservoirs and batteries.        |   53494 | Diabetic Centre
+ 2021-03-01 | DD PORTER LTD                                            | CT enabling works - Diagnostic equipment replacement                                |   77933 | Balance Sheet
+ 2021-03-01 | COIF CHARITIES ETHICAL INVESTMENT FUND                   | CCLA investment                                                                     |  500000 | Balance Sheet
+ 2021-03-01 | MEDICA REPORTING LTD                                     | Call-Off order for Medica Day/Night Hawk OOH                                        |   34087 | Radiology Countwide
+ 2021-03-01 | MEDICA REPORTING LTD                                     | Call-Off order for Medica Day/Night Hawk OOH                                        |   47227 | Radiology Countwide
+ 2021-03-01 | PINNEGAR HAYWARD DESIGN                                  | Design Team Services                                                                |   26760 | Balance Sheet
+ 2021-03-01 | SYNERGY HEALTH MANAGED SERVICES LTD                      | Linen services for Feb 21 for Alexandra Hospital                                    |   36161 | Laundry Serv-No Spec
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Contract COVERING PACS SYSTEMS                                                      |   25882 | Radiology Dept Alex
+ 2021-03-01 | SUPPLY CHAIN COORDINATION LIMITED                        | NHSSC - SIEMENS HEALTHCARE TOP SERVICE CONTRACT                                     |  124220 | Radiology Dept KGH
+ 2021-03-01 | WILLIAM GOUGH & SONS                                     | Evesham Community Hospital - Endoscopy Ventilation                                  |   67239 | Balance Sheet
+ 2021-03-01 | PINNEGAR HAYWARD DESIGN                                  | Design Team Services                                                                |   31400 | Balance Sheet
+ 2021-03-01 | STRIDE TREGLOWN LTD                                      | ED Expansion Aconbury                                                               |   28089 | Balance Sheet
+ 2021-03-01 | REDDITCH BOROUGH COUNCIL                                 | Non Domestic rates for the Alexandra Hospital                                       |  568320 | Trust Wide Rates
+ 2021-03-01 | TRAK SYSTEMS LTD                                         | Trak catering solutions                                                             |   50523 | Sterile Services - Alex
+ 2021-03-01 | TRAK SYSTEMS LTD                                         | Trak catering solutions                                                             |   83777 | Sterile Services - Alex
+ 2021-03-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Nurse Call Alex, Midwest supply, wiring installation                                |   29521 | Balance Sheet
+ 2021-03-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Alexandra Hospital Fire Alarm Infrastructure Replacement                            |  102740 | Balance Sheet
+ 2021-03-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Alexandra Hospital - AHU 3 & 4 Replacement                                          |   58315 | Balance Sheet
+ 2021-03-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Alexandra Hospital - AHU 3 & 4 Replacement                                          |   46674 | Balance Sheet
+ 2021-03-01 | MAQUET LTD                                               | Meera Operating Table + Accessories                                                 |   33091 | Balance Sheet
+ 2021-03-01 | LYNTON TRAILERS (UK) LTD                                 | Single X-ray Room Breast Screening Units                                            |   77360 | Balance Sheet
+ 2021-03-01 | LYNTON TRAILERS (UK) LTD                                 | Single X-ray Room Breast Screening Units                                            |  386800 | Balance Sheet
+ 2021-03-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Alexandra Hospital - AHU 3 & 4 Replacement                                          |   49577 | Balance Sheet
+ 2021-03-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF PO - CLOUD STORAGE SOLUTION PROVISION FOR PACS                             |   44273 | Balance Sheet
+ 2021-03-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF PO - SCCM - Upgrade to Current Branch                                      |  307388 | Balance Sheet
+ 2021-03-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF PO - Services to be called off                                             |   61976 | Balance Sheet
+ 2021-03-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF PO - CLOUD STORAGE SOLUTION PROVISION FOR PACS                             |  119273 | Balance Sheet
+ 2021-03-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF ORDER - NETWORKING - LAN - Edge Switches                                   |   55146 | Balance Sheet
+ 2021-03-01 | COMPUTACENTER (UK) LTD                                   | Dell Finance deal re provision of hardware & licenses                               |  135591 | WIFI
+ 2021-03-01 | COMPUTACENTER (UK) LTD                                   | Dell Finance deal re provision of hardware & licenses                               |  135591 | WIFI
+ 2021-03-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF ORDER - NETWORKING - LAN - Core Switches & Wireless Services               |  180859 | Balance Sheet
+ 2021-03-01 | ALLSCRIPTS HEALTHCARE (IT) UK LTD                        | Embedded Enterprise Edition license                                                 |  148671 | WIFI
+ 2021-03-01 | ALLSCRIPTS HEALTHCARE (IT) UK LTD                        | PROVISION OF HEALTHCARE CLINICAL INFORMATION SYSTEM SERVICES                        |  818625 | Digital Care Record
+ 2021-03-01 | KARL STORZ ENDOSCOPY UK LTD                              | Resectoscope Technical Services                                                     |   38246 | Balance Sheet
+ 2021-03-01 | KARL STORZ ENDOSCOPY UK LTD                              | Flexible endoscope Technical Service                                                |   30238 | Balance Sheet
+ 2021-03-01 | XOGRAPH HEALTHCARE LTD                                   | Replacement of DR Rooms - Alexandra Hospital                                        |   35653 | Balance Sheet
+ 2021-03-01 | XOGRAPH HEALTHCARE LTD                                   | Replacement of DR Rooms - Alexandra Hospital                                        |  178267 | Balance Sheet
+ 2021-03-01 | WORCESTER CITY COUNCIL                                   | Worcester City Council                                                              |   25500 | Kings Court
+ 2021-03-01 | BAYER PLC                                                | PHARMACY PURCHASES                                                                  |   45623 | Balance Sheet
+ 2021-03-01 | BAYER PLC                                                | PHARMACY PURCHASES                                                                  |   45623 | Balance Sheet
+ 2021-03-01 | BAYER PLC                                                | PHARMACY PURCHASES                                                                  |   45623 | Balance Sheet
+ 2021-03-01 | BAYER PLC                                                | PHARMACY PURCHASES                                                                  |   72996 | Balance Sheet
+ 2021-03-01 | BAYER PLC                                                | PHARMACY PURCHASES                                                                  |   45623 | Balance Sheet
+ 2021-03-01 | BAYER PLC                                                | PHARMACY PURCHASES                                                                  |   72996 | Balance Sheet
+ 2021-03-01 | BAYER PLC                                                | PHARMACY PURCHASES                                                                  |   45623 | Balance Sheet
+ 2021-03-01 | XEROX (UK) LTD                                           | Xerox - Call Off PO costs for the managed Print Contract                            |   96460 | Managed Print
+ 2021-03-01 | XEROX (UK) LTD                                           | Xerox - Rectify anomalies                                                           |   44540 | Xerox Contract
+ 2021-03-01 | XEROX (UK) LTD                                           | XEROX CALL OFF ORDER CONTRACT - Scanning Library and printing services              |   35950 | Xerox Contract
+ 2021-03-01 | NOVARTIS PHARMACEUTICALS UK LTD                          | PHARMACY PURCHASES                                                                  |   28882 | Balance Sheet
+ 2021-03-01 | MIDWEST ELECTRICAL SERVICES LTD                          | AHU 3 &4 Replacement                                                                |   35687 | Balance Sheet
+ 2021-03-01 | OLYMPUS KEYMED                                           | Laparoscopic imaging stacks 2 Slave systems                                         |  120394 | Balance Sheet
+ 2021-03-01 | OLYMPUS KEYMED                                           | Laparoscopic imaging stacks 2 Slave systems                                         |   34698 | Balance Sheet
+ 2021-03-01 | OLYMPUS KEYMED                                           | Laparoscopic imaging stacks 2 Slave systems                                         |  173488 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | UEC Spellers Strip and survey works - first floor and ground floor of Aconbury east |   40922 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | UEC Spellers Strip and survey works - first floor and ground floor of Aconbury east |  204609 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | Worcestershire Royal Hospital Breast Screening unit extension.                      |   60011 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | Strip and survey for UEC project ground floor Aconbury East                         |   31292 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | Strip and survey for UEC project ground floor Aconbury East                         |  156459 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | Worcestershire Royal Hospital Breast Screening unit extension                       |   56687 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | Strip and survey for UEC project ground floor Aconbury East                         |   55115 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | Strip and survey for UEC project ground floor Aconbury East                         |  275574 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | Strip and survey for UEC project ground floor Aconbury East                         |   59356 | Balance Sheet
+ 2021-03-01 | SPELLER METCALFE MALVERN LTD                             | Strip and survey for UEC project ground floor Aconbury East                         |  296778 | Balance Sheet
+ 2021-03-01 | ALLIANCE HEALTHCARE DISTRIBUTION LTD                     | PHARMACY PURCHASES                                                                  |   25631 | Balance Sheet
+ 2021-03-01 | ALLIANCE HEALTHCARE DISTRIBUTION LTD                     | PHARMACY PURCHASES                                                                  |   38391 | Balance Sheet
+ 2021-03-01 | ALLIANCE HEALTHCARE DISTRIBUTION LTD                     | PHARMACY PURCHASES                                                                  |   25620 | Balance Sheet
+ 2021-03-01 | ALLIANCE HEALTHCARE DISTRIBUTION LTD                     | PHARMACY PURCHASES                                                                  |   31304 | Balance Sheet
+ 2021-03-01 | ALLIANCE HEALTHCARE DISTRIBUTION LTD                     | PHARMACY PURCHASES                                                                  |   28123 | Balance Sheet
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |   90738 | Drugs reserve
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   61436 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  263849 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  179146 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |   39928 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  162986 | Drugs reserve
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  277329 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   65479 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |   54025 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  187161 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   54176 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  257378 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  116671 | Drugs reserve
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Overseas Nurses Fees                                                                |   34800 | Overseas Nurses
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   54192 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   37500 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  167338 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |   38593 | Drugs reserve
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  116757 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  245400 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   59613 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |   43718 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  188697 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  124482 | Drugs reserve
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   53964 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  253378 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   86933 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |   46427 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  189799 | Contingency
+ 2021-03-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  145664 | Contingency
+ 2021-03-01 | BOXXE LTD                                                | Subscription License CCU                                                            |   37881 | Balance Sheet
+ 2021-03-01 | BOXXE LTD                                                | Eizo Monitors RX560                                                                 |   37184 | Balance Sheet
+ 2021-03-01 | BOXXE LTD                                                | Eizo Monitors RX360                                                                 |   47755 | Balance Sheet
+ 2021-03-01 | CLINISYS SOLUTIONS LTD                                   | Support and Maintenance for Clinisys Winpath Pathology IT system                    |   96767 | Path General
+ 2021-03-01 | CLINISYS SOLUTIONS LTD                                   | Support and Maintenance for Clinisys Winpath Pathology IT system                    |   48343 | Path General
+ 2021-03-01 | CLINISYS SOLUTIONS LTD                                   | Support and Maintenance for Clinisys Winpath Pathology IT system                    |   30242 | Path General
+ 2021-03-01 | CLINISYS SOLUTIONS LTD                                   | Support and Maintenance for Clinisys Winpath Pathology IT system                    |  151212 | Path General
+ 2021-03-01 | COUCH PERRY&WILKES                                       | Site surveys and weekly design/Progress Meetings.                                   |   25000 | Balance Sheet
+ 2021-03-01 | UNIVERSITY HOSPITALS BIRMINGHAM NHS FOUNDATION TRUST     | Plastics SLA                                                                        |   33368 | Oral MaxFac- MedStaff WRH
+ 2021-03-01 | P2G MANAGEMENT LTD                                       | Agreement fee as set out in the Report for the Settlement Deed                      |   51113 | New Hospital Impl Admin
+ 2021-03-01 | SALFORD ROYAL HOSPITALS NHS FOUNDATION TRUST             | UEC Support                                                                         |  109680 | Balance Sheet
+ 2021-03-01 | ALLOGA UK LTD                                            | PHARMACY PURCHASES                                                                  |   27000 | Balance Sheet
+ 2021-03-01 | BATH ASU                                                 | PHARMACY PURCHASES                                                                  |   33393 | Balance Sheet
+ 2021-03-01 | BATH ASU                                                 | PHARMACY PURCHASES                                                                  |   33369 | Balance Sheet
+ 2021-03-01 | BATH ASU                                                 | PHARMACY PURCHASES                                                                  |   60088 | Balance Sheet
+ 2021-03-01 | BATH ASU                                                 | PHARMACY PURCHASES                                                                  |   32280 | Balance Sheet
+ 2021-03-01 | WATER PLUS LTD                                           | Water charges                                                                       |   43178 | Energy NTN
+ 2021-03-01 | WATER PLUS LTD                                           | Water charges                                                                       |   63678 | Energy NTN
+ 2021-03-01 | HEREFORDSHIRE & WORCESTERSHIRE HEALTH & CARE NHS TRUST   | Consultant Fees                                                                     |   74996 | Trustwide
+ 2021-03-01 | HEREFORDSHIRE & WORCESTERSHIRE HEALTH & CARE NHS TRUST   | Staff Nurse                                                                         |   64927 | Discharge Co-ordination
+ 2021-03-01 | HEREFORDSHIRE & WORCESTERSHIRE HEALTH & CARE NHS TRUST   | Consultant Fees                                                                     |  461861 | SLA Split of income
+ 2021-03-01 | HEREFORDSHIRE & WORCESTERSHIRE HEALTH & CARE NHS TRUST   | Consultant Fees                                                                     |  646944 | SLA Split of income
+ 2021-03-01 | HEREFORDSHIRE & WORCESTERSHIRE HEALTH & CARE NHS TRUST   | Staff Nurse                                                                         |   64926 | Discharge Co-ordination
+ 2021-03-01 | HEREFORDSHIRE & WORCESTERSHIRE HEALTH & CARE NHS TRUST   | Drugs for Spasticity clinics                                                        |   30591 | Balance Sheet
+ 2021-03-01 | HEREFORDSHIRE & WORCESTERSHIRE HEALTH & CARE NHS TRUST   | Consultant Fees                                                                     |  423270 | SLA Split of income
+ 2021-03-01 | HEREFORDSHIRE & WORCESTERSHIRE HEALTH & CARE NHS TRUST   | Staff Nurse                                                                         |   64926 | Discharge Co-ordination
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Fire Alarm Infrastructure Replacement                                               |   25000 | Balance Sheet
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   25466 | Balance Sheet
+ 2021-04-01 | GE MEDICAL SYSTEMS LTD                                   | Breast Screening Digital Mammography Equipment                                      |   25602 | Balance Sheet
+ 2021-04-01 | GE MEDICAL SYSTEMS LTD                                   | Breast Screening Digital Mammography Equipment                                      |   25602 | Balance Sheet
+ 2021-04-01 | INSIGNIA MEDICAL SYSTEMS LTD                             | Insignia PACS Contract                                                              |   25634 | Radiology Countwide
+ 2021-04-01 | ALTIATECH LTD                                            | System Support Renewal                                                              |   25650 | ICT Contingency
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   26226 | Contingency
+ 2021-04-01 | ARJO UK LTD                                              | Extension of Auto Logic Block rental mattresses                                     |   26387 | COVID-19
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Provision of hardware & licenses                                                    |   26578 | WIFI
+ 2021-04-01 | REGIS PROJECT MANAGEMENT LTD                             | Advisor Projects                                                                    |   26856 | New Hospital Impl Admin
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   27356 | Balance Sheet
+ 2021-04-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - Fixed Screens                                                                 |   27841 | COVID-19
+ 2021-04-01 | COUCH PERRY&WILKES                                       | Site surveys and weekly design                                                      |   27870 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |   27966 | Contingency
+ 2021-04-01 | NOVARTIS PHARMACEUTICALS UK LTD                          | PHARMACY PURCHASES                                                                  |   28849 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | DCR PAS Project Manager                                                             |   28912 | Digital Care Record
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   29584 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |   29772 | Contingency
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF PO - REMOTE ACCESS                                                         |   30000 | Balance Sheet
+ 2021-04-01 | REGIS PROJECT MANAGEMENT LTD                             | Advisor Projects                                                                    |   30040 | New Hospital Impl Admin
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF ORDER - NETWORKING                                                         |   30942 | Balance Sheet
+ 2021-04-01 | SYNERGY HEALTH MANAGED SERVICES LTD                      | Linen services                                                                      |   30990 | Laundry Serv-No Spec
+ 2021-04-01 | SOFTCAT PLC                                              | Multitone Contract Variations                                                       |   31039 | Telephone Serv- Alex
+ 2021-04-01 | ALLIANCE HEALTHCARE DISTRIBUTION LTD                     | PHARMACY PURCHASES                                                                  |   31112 | Balance Sheet
+ 2021-04-01 | ALLIANCE HEALTHCARE DISTRIBUTION LTD                     | PHARMACY PURCHASES                                                                  |   31288 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   31611 | Drugs reserve
+ 2021-04-01 | SOFTCAT PLC                                              | Multitone iMessage System                                                           |   32186 | Telephone Serv- Alex
+ 2021-04-01 | DD PORTER LTD                                            | CT enabling works - Diagnostic equipment replacement                                |   32492 | Balance Sheet
+ 2021-04-01 | SOFTCAT PLC                                              | Alertive Bleeping Contract                                                          |   32500 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | PAS - Project Management                                                            |   32607 | WIFI
+ 2021-04-01 | HELICON HEALTH LTD                                       | Subscription for Teladoc Health telemedicine stations                               |   33242 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Professional Services                                                               |   33333 | Balance Sheet
+ 2021-04-01 | BATH ASU                                                 | PHARMACY PURCHASES                                                                  |   33369 | Balance Sheet
+ 2021-04-01 | BATH ASU                                                 | PHARMACY PURCHASES                                                                  |   33393 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Computer Licenses                                                                   |   34182 | Software Support and Licences
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Recruitment fee for international nurses                                            |   34800 | Balance Sheet
+ 2021-04-01 | XEROX (UK) LTD                                           | Scanning Library and printing services                                              |   34940 | Xerox Contract
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF ORDER - COMBINED NETWORKING                                                |   35090 | Balance Sheet
+ 2021-04-01 | NHS BLOOD & TRANSPLANT                                   | Charge Blood and components                                                         |   35142 | Balance Sheet
+ 2021-04-01 | NHS BLOOD & TRANSPLANT                                   | Charge Blood and components                                                         |   35142 | Balance Sheet
+ 2021-04-01 | ROCHE PRODUCTS LTD                                       | PHARMACY PURCHASES                                                                  |   35929 | Balance Sheet
+ 2021-04-01 | BIRMINGHAM & SOLIHULL MENTAL HEALTH NHS FOUNDATION TRUST | LHCR programme costs                                                                |   36200 | Balance Sheet
+ 2021-04-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - Fixed Screens                                                                 |   38854 | COVID-19
+ 2021-04-01 | WYE VALLEY NHS TRUST                                     | Secondement Staff                                                                   |   39894 | Cardiology Medics
+ 2021-04-01 | NHS HEREFORDSHIRE AND WORCESTERSHIRE CCG                 | Recharge of intersystems                                                            |   40000 | Balance Sheet
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Extension to Car Park                                                               |   40127 | Balance Sheet
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   40420 | Balance Sheet
+ 2021-04-01 | 3D ALUMINIUM PLAS LTD                                    | Replacement of Windows                                                              |   41273 | Balance Sheet
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   41689 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Professional Services                                                               |   42123 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   42268 | Contingency
+ 2021-04-01 | WYE VALLEY NHS TRUST                                     | Bowel Cancer Screening - Programme                                                  |   44000 | Bowel Cancer Screening Centre
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   44146 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF ORDER - COMBINED NETWORKING                                                |   44680 | Balance Sheet
+ 2021-04-01 | BAYER PLC                                                | PHARMACY PURCHASES                                                                  |   45623 | Balance Sheet
+ 2021-04-01 | ALTIATECH LTD                                            | System Support Renewal                                                              |   46130 | ICT Contingency
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Nurse Call ,supply, installation and commission of equipment                        |   46133 | Balance Sheet
+ 2021-04-01 | MEDICA REPORTING LTD                                     | Call-Off order for Medica Day/Night Hawk OOH                                        |   47347 | Radiology Countwide
+ 2021-04-01 | E MANTON LTD                                             | Refurbishment of Utilities at the Alexandra Hospital                                |   48270 | Balance Sheet
+ 2021-04-01 | TRANSFORM HOSPITAL GROUP LTD                             | OMF Services                                                                        |   48750 | COO Operational Team
+ 2021-04-01 | SPELLER METCALFE MALVERN LTD                             | Breast Screening unit extension                                                     |   49205 | Balance Sheet
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Extension to Car Park                                                               |   49367 | Balance Sheet
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   49666 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |   51506 | Contingency
+ 2021-04-01 | BIOTEST UK LTD                                           | PHARMACY PURCHASES                                                                  |   54600 | Balance Sheet
+ 2021-04-01 | BIOTEST UK LTD                                           | PHARMACY PURCHASES                                                                  |   54600 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Computer Licenses                                                                   |   55049 | Software Support and Licences
+ 2021-04-01 | WYRE FOREST DISTRICT COUNCIL                             | Council Tax                                                                         |   56320 | Trust Wide Rates
+ 2021-04-01 | WYRE FOREST DISTRICT COUNCIL                             | Council Tax                                                                         |   56320 | Trust Wide Rates
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   56610 | Balance Sheet
+ 2021-04-01 | JMG ROOFING LTD                                          | Service Block roof refurbishment                                                    |   57012 | Balance Sheet
+ 2021-04-01 | 3D ALUMINIUM PLAS LTD                                    | Replacement of Windows                                                              |   58255 | Balance Sheet
+ 2021-04-01 | WILLIAM GOUGH & SONS                                     | Waste Compound                                                                      |   58675 | Balance Sheet
+ 2021-04-01 | SIEMENS HEALTHCARE LTD                                   | Medical Equipment - Imaging System                                                  |   61275 | Balance Sheet
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Ward and Theatre works                                                              |   62124 | Balance Sheet
+ 2021-04-01 | TRANSFORM HOSPITAL GROUP LTD                             | OMF Services                                                                        |   64588 | COO Operational Team
+ 2021-04-01 | UNIVERSITY HOSPITALS BIRMINGHAM NHS FOUNDATION TRUST     | Consultant Services                                                                 |   65062 | Respiratory Medics
+ 2021-04-01 | BATH ASU                                                 | PHARMACY PURCHASES                                                                  |   66738 | Balance Sheet
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Fire Alarm Infrastructure Replacement                                               |   66742 | Balance Sheet
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | CCTV Replacement                                                                    |   68035 | Balance Sheet
+ 2021-04-01 | PICK EVERARD                                             | Trust Advisor and Consultancy Services                                              |   70253 | Balance Sheet
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   71465 | Balance Sheet
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   73554 | Balance Sheet
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Extension to Car Park                                                               |   80490 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Computer Hardware Dell                                                              |   81473 | ICT Contingency
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | X-Ray Equipment                                                                     |   86724 | Radiology Countwide
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |   95961 | Balance Sheet
+ 2021-04-01 | WYE VALLEY NHS TRUST                                     | Bowel Cancer Screening - Programme                                                  |   96983 | Bowel Cancer Screening Centre
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | Medical and non medical products                                                    |  102769 | Balance Sheet
+ 2021-04-01 | NHS BLOOD & TRANSPLANT                                   | Charge Blood and components                                                         |  104266 | Balance Sheet
+ 2021-04-01 | NHS BLOOD & TRANSPLANT                                   | Charge Blood and components                                                         |  104266 | Balance Sheet
+ 2021-04-01 | INTERCLASS PLC                                           | Alexandra Hospital Breast Screening unit works                                      |  106966 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  107013 | Drugs reserve
+ 2021-04-01 | ADEPT TELECOM                                            | Circuit Charges Worcestershire Royal Hospital                                       |  107584 | WAN
+ 2021-04-01 | ADEPT TELECOM                                            | Circuit Charges Worcestershire Royal Hospital                                       |  107584 | WAN
+ 2021-04-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - Oncology CT installation                                                      |  107846 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  108315 | Drugs reserve
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  112053 | Drugs reserve
+ 2021-04-01 | FRESENIUS MEDICAL CARE UK LTD                            | Replacement of RO plant at Dialysis Unit                                            |  113510 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  121952 | Drugs reserve
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Nurse Call, supply, installation and commission of equipment                        |  123583 | Balance Sheet
+ 2021-04-01 | WORCESTER CITY COUNCIL                                   | Worcester City Council. Rental of building                                          |  127500 | Kings Court
+ 2021-04-01 | GE MEDICAL SYSTEMS LTD                                   | Breast Screening Digital Mammography Equipment                                      |  128010 | Balance Sheet
+ 2021-04-01 | GE MEDICAL SYSTEMS LTD                                   | Breast Screening Digital Mammography Equipment                                      |  128010 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  129446 | Contingency
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  140283 | Drugs reserve
+ 2021-04-01 | WORCESTER CITY COUNCIL                                   | Council Tax                                                                         |  141824 | Trust Wide Rates
+ 2021-04-01 | WORCESTER CITY COUNCIL                                   | Council Tax                                                                         |  141824 | Trust Wide Rates
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  143377 | Contingency
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  150659 | Contingency
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  154028 | Drugs reserve
+ 2021-04-01 | DD PORTER LTD                                            | CT enabling works - Diagnostic equipment replacement                                |  162458 | Balance Sheet
+ 2021-04-01 | HELICON HEALTH LTD                                       | Subscription for Teladoc Health telemedicine stations                               |  166210 | Balance Sheet
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Ward Replacement                                                                    |  178435 | Balance Sheet
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Server Upgrade Programme                                                            |  183806 | Balance Sheet
+ 2021-04-01 | NHS HEREFORDSHIRE AND WORCESTERSHIRE CCG                 | Recharge of Mindwave Care Planning                                                  |  200000 | Balance Sheet
+ 2021-04-01 | MIDWEST ELECTRICAL SERVICES LTD                          | Extension to Car Park                                                               |  200633 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  202212 | Contingency
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Digital Aspirant Project                                                            |  233000 | ICT Recharges
+ 2021-04-01 | ST HELENS & KNOWSLEY HOSPITALS NHS TRUST                 | POST GRADUATE LEVY - WEST MIDLANDS                                                  |  240000 | Madel Acute
+ 2021-04-01 | ST HELENS & KNOWSLEY HOSPITALS NHS TRUST                 | POST GRADUATE LEVY - WEST MIDLANDS                                                  |  240000 | Madel Acute
+ 2021-04-01 | SPELLER METCALFE MALVERN LTD                             | Breast Screening unit extension                                                     |  246025 | Balance Sheet
+ 2021-04-01 | 3D ALUMINIUM PLAS LTD                                    | Replacement of Windows                                                              |  250000 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  253391 | Contingency
+ 2021-04-01 | BIRMINGHAM & SOLIHULL MENTAL HEALTH NHS FOUNDATION TRUST | Intersystems Hosting                                                                |  288000 | Balance Sheet
+ 2021-04-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | DAF - Professional fees                                                             |  300000 | Balance Sheet
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Agency Staff                                                                        |  301794 | Contingency
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  303664 | Contingency
+ 2021-04-01 | SIEMENS HEALTHCARE LTD                                   | Medical Equipment - Imaging System                                                  |  306375 | Balance Sheet
+ 2021-04-01 | CARE QUALITY COMMISSION                                  | Annual Fee                                                                          |  319646 | Chief Executive
+ 2021-04-01 | NHS PROFESSIONALS LTD                                    | Staff Nurse                                                                         |  351630 | Contingency
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | Professional Services                                                               |  390000 | Balance Sheet
+ 2021-04-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | UEC Expansion Project                                                               |  393799 | Balance Sheet
+ 2021-04-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Performance Staff and equipments costs                                              |  402901 | PFI- Unitary Payments
+ 2021-04-01 | SUPPLY CHAIN COORDINATION LIMITED                        | X-Ray Equipment                                                                     |  433622 | Radiology Countwide
+ 2021-04-01 | XEROX (UK) LTD                                           | Scanning Library and printing services                                              |  487500 | Xerox Contract
+ 2021-04-01 | COMPUTACENTER (UK) LTD                                   | CALL OFF ORDER - NETWORKING                                                         |  535773 | Balance Sheet
+ 2021-04-01 | WORCESTERSHIRE HOSPITAL SPC PLC                          | Performance Staff and equipments costs                                              | 2311856 | PFI- Unitary Payments
+ 2021-04-01 | INLAND REVENUE CIS                                       | Income Tax                                                                          | 2989772 | Balance Sheet
+ 2021-04-01 | INLAND REVENUE CIS                                       | National Insurance Contributions                                                    | 3330925 | Balance Sheet
+(342 rows)
+
