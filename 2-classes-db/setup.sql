@@ -510,7 +510,7 @@ INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transac
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (31,6,37,'2021-04-01',37905659,'I000039857P','Agency Staff',301794);
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (2,6,37,'2021-04-01',37940586,'I000039905P','Staff Nurse',303664);
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (26,1,48,'2021-04-01',37905196,'1051097317','Medical Equipment - Imaging System',306375);
-INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (35,5,13,'2021-04-01',38014054,'42914332','Annual Fee',319646);
+INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (35,5,13,'2021-04-01',38014054,'42914332','Annual q',319646);
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (2,6,37,'2021-04-01',37852638,'I000039570P','Staff Nurse',351630);
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (1,1,16,'2021-04-01',37854007,'3780119641','Professional Services',390000);
 INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount) VALUES (1,1,61,'2021-04-01',37828204,'11802','UEC Expansion Project',393799);
