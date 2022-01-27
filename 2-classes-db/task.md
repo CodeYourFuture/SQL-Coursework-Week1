@@ -72,6 +72,9 @@ JOIN expense_areas ON spends.expense_area_id = expense_areas.id WHERE expense_ar
 
 ```sql
 
+SELECT date, suppliers.supplier, description, amount FROM spends
+JOIN expense_areas ON spends.expense_area_id = expense_areas.id INNER JOIN suppliers ON spends.supplier_id = suppliers.id WHERE expense_areas.expense_area = 'Better Hospital Food';
+
 ```
 
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
