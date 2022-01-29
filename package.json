@@ -1,0 +1,25 @@
+{
+  "name": "homework-server",
+  "version": "1.0.0",
+  "description": "week2 sql connecting to an express node server",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomRafferty/SQL-Coursework-Week1.git"
+  },
+  "author": "Tom Rafferty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomRafferty/SQL-Coursework-Week1/issues"
+  },
+  "homepage": "https://github.com/TomRafferty/SQL-Coursework-Week1#readme"
+}
