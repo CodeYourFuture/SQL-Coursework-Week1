@@ -88,11 +88,20 @@ JOIN expense_areas ON spends.expense_area_id = expense_areas.id INNER JOIN suppl
 
 ```sql
 
+INSERT INTO spends(expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount)
+VALUES(7, 18, 16, '2021-04-01', 38104091, 3780119655, 'Computer Hardware Dell', 50000);
+
+-- checking that the insert was successful
+
+SELECT * FROM spends WHERE description = 'Computer Hardware Dell';
+
 ```
 
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 
 ```sql
+
+SELECT date, SUM(amount) AS total_day_spend FROM spends GROUP BY date;
 
 ```
 
