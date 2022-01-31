@@ -118,6 +118,9 @@ SELECT date, SUM(amount) AS total_day_spend FROM spends GROUP BY date;
 Can you work out how to do this?
 
 ```sql
+SELECT TO_CHAR(date :: DATE, 'Month YYYY') AS Month, TO_CHAR(SUM(amount), '£ FM999,999,999') AS Monthly_Spend
+FROM spends
+GROUP BY date;
 
 ```
 
