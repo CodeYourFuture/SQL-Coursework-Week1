@@ -50,7 +50,7 @@ SELECT
   amount
 FROM
   spends
-WHERE description LIKE '%fee%'
+WHERE description LIKE '%fee%';
 
 ```
 
