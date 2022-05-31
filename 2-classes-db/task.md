@@ -91,7 +91,8 @@ insert into spends (expense_type_id, expense_area_id, supplier_id, date, transac
 
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 
-```sql
+```
+select date as date, count (amount) as amount from spends group by date;
 
 ```
 
@@ -107,7 +108,9 @@ insert into spends (expense_type_id, expense_area_id, supplier_id, date, transac
 
 Can you work out how to do this?
 
-```sql
+```
+DECLARE @d DATETIME = '2021-04-01';
+SELECT FORMAT (@d, 'd', 'en-US') AS US English Result, count (amount) as amount from spends group by date;
 
 ```
 
