@@ -21,30 +21,305 @@ To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 ```sql
+homework=> SELECT * FROM spends;
+homework=> SELECT 
+                    date, 
+                    transaction_no, 
+                    description, 
+                    amount 
+            FROM    spends 
+            WHERE   amount BETWEEN 30000 AND 31000;
+    date    | transaction_no |                           description                            | amount 
+------------+----------------+------------------------------------------------------------------+--------
+ 2021-03-01 |       37755444 | Flexible endoscope Technical Service                             |  30238
+ 2021-03-01 |       37632601 | Support and Maintenance for Clinisys Winpath Pathology IT system |  30242
+ 2021-03-01 |       37675451 | Drugs for Spasticity clinics                                     |  30591
+ 2021-04-01 |       37854035 | CALL OFF PO - REMOTE ACCESS                                      |  30000
+ 2021-04-01 |       38014043 | Advisor Projects                                                 |  30040
+ 2021-04-01 |       37823809 | CALL OFF ORDER - NETWORKING                                      |  30942
+ 2021-04-01 |       37829728 | Linen services                                                   |  30990
+ 2021-03-01 |       37755444 | Flexible endoscope Technical Service                             |  30238
+ 2021-03-01 |       37632601 | Support and Maintenance for Clinisys Winpath Pathology IT system |  30242
+ 2021-03-01 |       37675451 | Drugs for Spasticity clinics                                     |  30591
+ 2021-04-01 |       37854035 | CALL OFF PO - REMOTE ACCESS                                      |  30000
+ 2021-04-01 |       38014043 | Advisor Projects                                                 |  30040
+ 2021-04-01 |       37823809 | CALL OFF ORDER - NETWORKING                                      |  30942
+ 2021-04-01 |       37829728 | Linen services                                                   |  30990
+ 2021-03-01 |       37755444 | Flexible endoscope Technical Service                             |  30238
+ 2021-03-01 |       37632601 | Support and Maintenance for Clinisys Winpath Pathology IT system |  30242
+ 2021-03-01 |       37675451 | Drugs for Spasticity clinics                                     |  30591
+ 2021-04-01 |       37854035 | CALL OFF PO - REMOTE ACCESS                                      |  30000
+ 2021-04-01 |       38014043 | Advisor Projects                                                 |  30040
+ 2021-04-01 |       37823809 | CALL OFF ORDER - NETWORKING                                      |  30942
+ 2021-04-01 |       37829728 | Linen services                                                   |  30990
+ 2021-03-01 |       37755444 | Flexible endoscope Technical Service                             |  30238
+ 2021-03-01 |       37632601 | Support and Maintenance for Clinisys Winpath Pathology IT system |  30242
+ 2021-03-01 |       37675451 | Drugs for Spasticity clinics                                     |  30591
+ 2021-04-01 |       37854035 | CALL OFF PO - REMOTE ACCESS                                      |  30000
+ 2021-04-01 |       38014043 | Advisor Projects                                                 |  30040
+ 2021-04-01 |       37823809 | CALL OFF ORDER - NETWORKING                                      |  30942
+ 2021-04-01 |       37829728 | Linen services                                                   |  30990
+(28 rows)
 
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
 
+homework=> SELECT 
+                    date, 
+                    transaction_no, 
+                    supplier_inv_no, 
+                    description, 
+                    amount 
+           FROM     spends 
+           WHERE    description LIKE '%fee%';
+    date    | transaction_no | supplier_inv_no |                          description                           | amount 
+------------+----------------+-----------------+----------------------------------------------------------------+--------
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+(12 rows)
+
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
+homework=> SELECT 
+                    date, 
+                    transaction_no, 
+                    supplier_inv_no, 
+                    description, 
+                    amount 
+           FROM     spends 
+           WHERE    description LIKE '%Fee%';
+    date    | transaction_no | supplier_inv_no |     description      | amount 
+------------+----------------+-----------------+----------------------+--------
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees |  34800
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees      |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees      | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees      | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees      | 423270
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee           | 319646
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees |  34800
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees      |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees      | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees      | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees      | 423270
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee           | 319646
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees |  34800
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees      |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees      | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees      | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees      | 423270
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee           | 319646
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees |  34800
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees      |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees      | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees      | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees      | 423270
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee           | 319646
+(24 rows)
+
 
 ```
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
 ```sql
+homework=> SELECT
+                    date, 
+                    transaction_no, 
+                    supplier_inv_no, 
+                    description, 
+                    amount 
+           FROM     spends 
+           WHERE    lower(description) LIKE '%fee%';
+
+
+date    | transaction_no | supplier_inv_no |                          description                           | amount 
+------------+----------------+-----------------+----------------------------------------------------------------+--------
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees                                           |  34800
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees                                                |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees                                                | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees                                                | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees                                                | 423270
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee                                                     | 319646
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees                                           |  34800
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees                                                |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees                                                | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees                                                | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees                                                | 423270
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee                                                     | 319646
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees                                           |  34800
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees                                                |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees                                                | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees                                                | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees                                                | 423270
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee                                                     | 319646
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees                                           |  34800
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees                                                |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees                                                | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees                                                | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees                                                | 423270
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee                                                     | 319646
+(36 rows)
+
+
 
 ```
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
 ```sql
+homework=> SELECT 
+                    date, 
+                    transaction_no, 
+                    supplier_inv_no, 
+                    description, 
+                    amount 
+           FROM     spends 
+           WHERE    amount = 25000 OR amount = 30000 OR amount = 35000 OR amount = 40000;
+    date    | transaction_no | supplier_inv_no |                    description                    | amount 
+------------+----------------+-----------------+---------------------------------------------------+--------
+ 2021-03-01 |       37588987 | 11716           | Waste Volume                                      |  25000
+ 2021-03-01 |       37698700 | 11795           | Waste Volume                                      |  25000
+ 2021-03-01 |       37520209 | INV4131         | Site surveys and weekly design/Progress Meetings. |  25000
+ 2021-04-01 |       37801641 | 305719          | Fire Alarm Infrastructure Replacement             |  25000
+ 2021-04-01 |       37854035 | 3780119745      | CALL OFF PO - REMOTE ACCESS                       |  30000
+ 2021-04-01 |       38059452 | 7032500381      | Recharge of intersystems                          |  40000
+ 2021-03-01 |       37588987 | 11716           | Waste Volume                                      |  25000
+ 2021-03-01 |       37698700 | 11795           | Waste Volume                                      |  25000
+ 2021-03-01 |       37520209 | INV4131         | Site surveys and weekly design/Progress Meetings. |  25000
+ 2021-04-01 |       37801641 | 305719          | Fire Alarm Infrastructure Replacement             |  25000
+ 2021-04-01 |       37854035 | 3780119745      | CALL OFF PO - REMOTE ACCESS                       |  30000
+ 2021-04-01 |       38059452 | 7032500381      | Recharge of intersystems                          |  40000
+ 2021-03-01 |       37588987 | 11716           | Waste Volume                                      |  25000
+ 2021-03-01 |       37698700 | 11795           | Waste Volume                                      |  25000
+ 2021-03-01 |       37520209 | INV4131         | Site surveys and weekly design/Progress Meetings. |  25000
+ 2021-04-01 |       37801641 | 305719          | Fire Alarm Infrastructure Replacement             |  25000
+ 2021-04-01 |       37854035 | 3780119745      | CALL OFF PO - REMOTE ACCESS                       |  30000
+ 2021-04-01 |       38059452 | 7032500381      | Recharge of intersystems                          |  40000
+ 2021-03-01 |       37588987 | 11716           | Waste Volume                                      |  25000
+ 2021-03-01 |       37698700 | 11795           | Waste Volume                                      |  25000
+ 2021-03-01 |       37520209 | INV4131         | Site surveys and weekly design/Progress Meetings. |  25000
+ 2021-04-01 |       37801641 | 305719          | Fire Alarm Infrastructure Replacement             |  25000
+ 2021-04-01 |       37854035 | 3780119745      | CALL OFF PO - REMOTE ACCESS                       |  30000
+ 2021-04-01 |       38059452 | 7032500381      | Recharge of intersystems                          |  40000
+(24 rows)
+
+
+homework=> SELECT 
+                    date, 
+                    transaction_no, 
+                    supplier_inv_no, 
+                    description, 
+                    amount 
+           FROM     spends 
+           WHERE    amount IN (25000, 30000, 35000, 40000);
+    date    | transaction_no | supplier_inv_no |                    description                    | amount 
+------------+----------------+-----------------+---------------------------------------------------+--------
+ 2021-03-01 |       37588987 | 11716           | Waste Volume                                      |  25000
+ 2021-03-01 |       37698700 | 11795           | Waste Volume                                      |  25000
+ 2021-03-01 |       37520209 | INV4131         | Site surveys and weekly design/Progress Meetings. |  25000
+ 2021-04-01 |       37801641 | 305719          | Fire Alarm Infrastructure Replacement             |  25000
+ 2021-04-01 |       37854035 | 3780119745      | CALL OFF PO - REMOTE ACCESS                       |  30000
+ 2021-04-01 |       38059452 | 7032500381      | Recharge of intersystems                          |  40000
+ 2021-03-01 |       37588987 | 11716           | Waste Volume                                      |  25000
+ 2021-03-01 |       37698700 | 11795           | Waste Volume                                      |  25000
+ 2021-03-01 |       37520209 | INV4131         | Site surveys and weekly design/Progress Meetings. |  25000
+ 2021-04-01 |       37801641 | 305719          | Fire Alarm Infrastructure Replacement             |  25000
+ 2021-04-01 |       37854035 | 3780119745      | CALL OFF PO - REMOTE ACCESS                       |  30000
+ 2021-04-01 |       38059452 | 7032500381      | Recharge of intersystems                          |  40000
+ 2021-03-01 |       37588987 | 11716           | Waste Volume                                      |  25000
+ 2021-03-01 |       37698700 | 11795           | Waste Volume                                      |  25000
+ 2021-03-01 |       37520209 | INV4131         | Site surveys and weekly design/Progress Meetings. |  25000
+ 2021-04-01 |       37801641 | 305719          | Fire Alarm Infrastructure Replacement             |  25000
+ 2021-04-01 |       37854035 | 3780119745      | CALL OFF PO - REMOTE ACCESS                       |  30000
+ 2021-04-01 |       38059452 | 7032500381      | Recharge of intersystems                          |  40000
+ 2021-03-01 |       37588987 | 11716           | Waste Volume                                      |  25000
+ 2021-03-01 |       37698700 | 11795           | Waste Volume                                      |  25000
+ 2021-03-01 |       37520209 | INV4131         | Site surveys and weekly design/Progress Meetings. |  25000
+ 2021-04-01 |       37801641 | 305719          | Fire Alarm Infrastructure Replacement             |  25000
+ 2021-04-01 |       37854035 | 3780119745      | CALL OFF PO - REMOTE ACCESS                       |  30000
+ 2021-04-01 |       38059452 | 7032500381      | Recharge of intersystems                          |  40000
+(24 rows)
+
+
 
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 ```sql
+homework=> SELECT 
+                        date, 
+                        supplier_id, 
+                        description, 
+                        amount 
+           FROM         spends 
+           INNER JOIN   expense_areas 
+           ON           spends.expense_area_id = expense_areas.id 
+           WHERE        expense_area = 'Better Hospital Food';  
+    date    | supplier_id |         description         | amount 
+------------+-------------+-----------------------------+--------
+ 2021-03-01 |          61 | Meals Volume                | 105000
+ 2021-03-01 |          61 | Meals Additional Variations |  32558
+ 2021-03-01 |          61 | Meals Volume                | 100000
+ 2021-03-01 |          61 | Meals Volume                | 105000
+ 2021-03-01 |          61 | Meals Additional Variations |  32558
+ 2021-03-01 |          61 | Meals Volume                | 100000
+ 2021-03-01 |          61 | Meals Volume                | 105000
+ 2021-03-01 |          61 | Meals Additional Variations |  32558
+ 2021-03-01 |          61 | Meals Volume                | 100000
+ 2021-03-01 |          61 | Meals Volume                | 105000
+ 2021-03-01 |          61 | Meals Additional Variations |  32558
+ 2021-03-01 |          61 | Meals Volume                | 100000
+(12 rows)
+
 
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 ```sql
+homework=> SELECT
+homework->   spends.date,
+homework->   suppliers.supplier,
+homework->   spends.description,
+homework->   spends.amount
+homework->  
+homework-> FROM spends
+homework-> INNER JOIN suppliers
+homework->   ON suppliers.id = spends.supplier_id
+homework-> INNER JOIN expense_areas
+homework->   ON expense_areas.id = spends.expense_area_id where expense_area= 'Better Hospital Food';
+    date    |            supplier             |         description         | amount 
+------------+---------------------------------+-----------------------------+--------
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 105000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Additional Variations |  32558
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 100000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 105000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Additional Variations |  32558
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 100000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 105000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Additional Variations |  32558
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 100000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 105000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Additional Variations |  32558
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 100000
+(12 rows)
 
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
@@ -56,10 +331,46 @@ To submit this homework write the correct commands after each question.
     the expense area is 'ICT Contingency' (id 18)
     for £32,000.
 ```sql
+homework=> INSERT INTO spends 
+                        (expense_type_id,
+                        expense_area_id, 
+                        supplier_id,
+                        amount,
+                        date,
+                        transaction_no,
+                        supplier_inv_no,
+                        description)
+homework-> VALUES 
+                        (7,
+                        18,
+                        16,
+                        32000,
+                        '2021-04-01',
+                        38104091,
+                        3780119655,
+                        'Computer Hardware Dell'); 
+INSERT 0 1
+homework=> SELECT * FROM spends;
+
+
+ 287 |               7 |              18 |          16 | 2021-04-01 |       37829701 | 3882986165         | Computer Hardware Dell                                                              |   81473
+  288 |              41 |              33 |          53 | 2021-04-01 |       38015058 | 9522000093         | X-Ray Equipment                                                                     |   86724
+  289 |              29 |               1 |          53 | 2021-04-01 |       38067073 | 1122013957         | Medical and non medical products                                                    |   95961
+  290 |              19 |               3 |          62 | 2021-04-01 |       37828188 | 373940             | Bowel Cancer Screening - Programme                                                  |   96983
+  291 |              29 |               1 |          53 | 2021-04-01 |       37987244 | 1122005523         | Medical and non medical products                                                    |  102769
+  292 |              39 |               1 |          34 | 2021-04-01 |       37828240 | 894978             | Charge Blood and components      :
+
 
 ```
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
+homework=> SELECT date, SUM(amount) FROM spends GROUP BY date;
+    date    |    sum    
+------------+-----------
+ 2021-03-01 | 114697808
+ 2021-04-01 |  91612776
+(2 rows)
+
 
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
