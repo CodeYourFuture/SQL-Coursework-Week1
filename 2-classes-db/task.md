@@ -29,6 +29,8 @@ To submit this homework write the correct commands after each question.
 ```sql
 
 SELECT date, transaction_no, description, amount  FROM spends where amount > 30000 and amount< 31000;
+
+SELECT date,transaction_no,description,amount FROM spends WHERE amount BETWEEN 30000 AND 31000;
 ```
 
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
@@ -100,7 +102,7 @@ INSERT INTO spends ( date, description, transaction_no,supplier_inv_no, supplier
 
 ```sql
 
-
+SELECT date, sum(amount) from spends GROUP BY date;
 
 ```
 
@@ -117,6 +119,12 @@ INSERT INTO spends ( date, description, transaction_no,supplier_inv_no, supplier
 Can you work out how to do this?
 
 ```sql
+
+
+SELECT TO_CHAR(date, 'Month YYYY') as "Month", TO_CHAR(SUM(amount), '£99G999G999') AS "Monthly Spend"
+FROM spends GROUP BY date;
+
+
 
 ```
 
