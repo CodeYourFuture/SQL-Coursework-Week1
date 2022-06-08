@@ -186,14 +186,21 @@ Can you work out how to do this?
 
 ```sql
 
-SELECT date, to_char(SUM(amount), 'L999G999G999D99') 
+SELECT to_char(date, 'Month YYYY') AS "Month", 
+       to_char(SUM(amount), 'L999G999G999') AS "Monthly Spend"
 FROM spends
 GROUP BY date;
-    date    |     to_char      
-------------+------------------
- 2021-03-01 | £  28,674,452.00
- 2021-04-01 | £  22,927,194.00
+
+     Month      | Monthly Spend 
+----------------+---------------
+ March     2021 | £  28,674,452
+ April     2021 | £  22,927,194
 (2 rows)
+
+
+```
+
+
 
 
 **Please Note:**
@@ -203,6 +210,5 @@ hence *22895194 + 32000 =* **22927194**
 Task 10's question should be amended to reflect this alteration.
 Thank You
 
-```
 
-When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
+
