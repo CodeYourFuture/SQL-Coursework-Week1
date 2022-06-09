@@ -87,7 +87,7 @@ SELECT date, SUM(amount) FROM spends GROUP BY date;
 Can you work out how to do this?
 
 ```sql
-SELECT to_char(date, 'Mon/DD/YYYY'), to_char(CAST(SUM(amount) as MONEY), (99999999)) FROM spends GROUP BY DATE;
+SELECT TO_Char(date, 'Month YYYY'), TO_CHAR(SUM(amount), '£99G999G999') AS "Monthly Spend" FROM spends GROUP BY DATE;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
