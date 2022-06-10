@@ -64,7 +64,7 @@ SELECT date, supplier_id, description, amount FROM spends INNER JOIN expense_are
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 
 ```sql
-
+SELECT date, supplier_id, description, amount FROM spends INNER JOIN expense_areas ON expense_areas.expense_area LIKE 'Better Hospital Food';
 ```
 
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
