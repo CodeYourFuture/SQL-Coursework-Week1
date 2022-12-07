@@ -22,22 +22,25 @@ To submit this homework write the correct commands after each question.
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 ```sql
 
+select date, transaction_no, description from spends where amount BETWEEN £30,000 AND £31,000;
+
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
-
+select date, transaction_no, supplier_inv_no, description, amount from spends where description like '%wfee%';
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
-
+select date, transaction_no, supplier_inv_no, description, amount from spends where description like '%wfee%';
 ```
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
 ```sql
-
+select date, transaction_no, supplier_inv_no, description, amount from spends where description COLLATE Latin1_General_CS_AS like '%wfee%';
 ```
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
 ```sql
 
+select date, transaction_no, supplier_inv_no, description from spends where amount = '£25,000' AND  amount ='£30,000' (amount='£35,000' ORamount='£40,000');;
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 ```sql
