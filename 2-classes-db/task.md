@@ -56,7 +56,7 @@ To submit this homework write the correct commands after each question.
 
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 
-```sql select spends.date, spends.supplier_id, spends.description, spends.amount from spends inner join expense_areas on spends.expense_area_id = expense_areas.id (honestly don't know if this is correct, there's no expected data to compare the answer to)
+```sql select spends.date, spends.supplier_id, spends.description, spends.amount from spends inner join expense_areas on spends.expense_area_id = expense_areas.id where expense_area = 'Better Hospital Foods'
 
 ```
 
