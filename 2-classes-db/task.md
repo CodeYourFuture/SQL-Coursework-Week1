@@ -62,7 +62,9 @@ To submit this homework write the correct commands after each question.
 
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 
-```sql
+```select spends.date, suppliers.supplier, spends.description, spends.amount from spends
+   inner join suppliers on spends.supplier_id = suppliers.id
+   inner join expense_areas on spends.expense_area_id = expense_areas.id where expense_area = 'Better Hospital Food'
 
 ```
 
