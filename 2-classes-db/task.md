@@ -50,7 +50,7 @@ To submit this homework write the correct commands after each question.
 
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
 
-```sql
+```sql select date, transaction_no, supplier_inv_no, description, amount from spends where amount = 25000 or amount = 30000 or amount = 35000 or amount = 40000;
 
 ```
 
