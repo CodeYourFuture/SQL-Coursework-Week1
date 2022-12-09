@@ -78,7 +78,7 @@ To submit this homework write the correct commands after each question.
     the expense area is 'ICT Contingency' (id 18)
     for £32,000.
 
-```sql
+```sql insert into spends ("date", description, transaction_no, supplier_inv_no, supplier_id, expense_type_id, expense_area_id, amount) values ('2021-04-01', 'Computer Hardware Dell', 38104091, 3780119655, 16, 7, 18, 32000);
 
 ```
 
