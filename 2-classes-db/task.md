@@ -51,11 +51,11 @@ inner join expense_areas on expense_areas.id = spends.expense_area_id
 where expense_area = 'Better Hospital Food'
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
+```sql
 select date, supplier, description, amount from spends
 inner join expense_areas on expense_areas.id = spends.expense_area_id
 inner join suppliers on suppliers.id = spends.supplier_id  
 where expense_area = 'Better Hospital Food';
-```sql
 
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
@@ -72,6 +72,8 @@ INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transac
 ```
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
+select date, sum(amount) from spends s 
+group by date;
 
 
 ```
@@ -86,6 +88,8 @@ INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transac
 Can you work out how to do this?
 
 ```sql
+select date as Month, sum(amount) as Monthly_Spend from spends
+group by date;
 
 ```
 
