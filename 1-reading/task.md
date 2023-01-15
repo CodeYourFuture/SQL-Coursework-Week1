@@ -7,4 +7,3 @@
     1.  Read the String Functions and Operators section.
     2.  Read the Date/Time Functions and Operators section.
 3.  Study the build-hotel.sql script used to create the sample database.  Compare it with the struture of the tables themselves.
-
