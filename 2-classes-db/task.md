@@ -74,11 +74,19 @@ To submit this homework write the correct commands after each question.
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 ```sql
-
+    date    | supplier_id |         description         | amount
+------------+-------------+-----------------------------+--------
+ 2021-03-01 |          61 | Meals Volume                | 105000
+ 2021-03-01 |          61 | Meals Additional Variations |  32558
+ 2021-03-01 |          61 | Meals Volume                | 100000
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 ```sql
-
+    date    |            supplier             |         description         | amount
+------------+---------------------------------+-----------------------------+--------
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 105000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Additional Variations |  32558
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 100000
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
     dated 1st April 2021
@@ -89,11 +97,16 @@ To submit this homework write the correct commands after each question.
     the expense area is 'ICT Contingency' (id 18)
     for £32,000.
 ```sql
-
+ id  | expense_type_id | expense_area_id | supplier_id |    date    | transaction_no | supplier_inv_no |      description       | amount
+-----+-----------------+-----------------+-------------+------------+----------------+-----------------+------------------------+--------
+ 343 |               7 |              18 |          16 | 2021-04-01 |       38104091 | 3780119655      | Computer Hardware Dell |  32000
 ```
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
-
+    date    | total_amount
+------------+--------------
+ 2021-03-01 |     28674452
+ 2021-04-01 |     22927194
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
 ```
