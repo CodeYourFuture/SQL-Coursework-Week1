@@ -118,7 +118,8 @@ from spends group by date;
 Can you work out how to do this?
 
 ```sql
-select to_char(date, 'Month YYYY'), sum(amount)
+set lc_monetary = 'en_GB';
+select to_char(date, 'Month YYYY'), to_char(sum(amount),'LFM99G999G999') 
 from spends
 group by date;
 ```
