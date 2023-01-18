@@ -19,14 +19,15 @@ Below you will find a set of tasks for you to complete to consolidate and extend
 
 To submit this homework write the correct commands after each question.
 
-### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
-```sql
+### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.sql
+
+select date, transaction_no, description, amount from spends where amount between 30000 and 31000;
 
 
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
-
+select date, transaction_no, supplier_inv_no, description, amount from spends where description like '%fee%';
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
