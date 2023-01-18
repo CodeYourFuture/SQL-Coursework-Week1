@@ -112,7 +112,7 @@ select spends.date, suppliers.supplier, spends.description, spends.amount from s
     the expense area is 'ICT Contingency' (id 18)
     for £32,000.
 ```sql
-
+INSERT INTO spends(date, expense_type_id, expense_area_id, supplier_id, transaction_no, supplier_inv_no, description, amount) VALUES('2021-04-01', 7, 18, 16, 38104091,'3780119655','Computer Hardware Dell', 32000);
 ```
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
