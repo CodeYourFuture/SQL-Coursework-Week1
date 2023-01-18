@@ -113,3 +113,4 @@ GROUP BY date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
+git 
