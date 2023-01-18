@@ -27,11 +27,27 @@ select date, transaction_no, description, amount from spends where amount > 3000
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
 select date, transaction_no, supplier_inv_no, description, amount from spends where description like '%fee%';
+ date    | transaction_no | supplier_inv_no |                          description                           | amount 
+------------+----------------+-----------------+----------------------------------------------------------------+--------
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+(3 rows)
 
 
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
+ select date, transaction_no, supplier_inv_no, description, amount from spends where description like '%Fee%';
+    date    | transaction_no | supplier_inv_no |     description      | amount 
+------------+----------------+-----------------+----------------------+--------
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees |  34800
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees      |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees      | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees      | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees      | 423270
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee           | 319646
+(6 rows)
 
 ```
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
