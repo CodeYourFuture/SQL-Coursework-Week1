@@ -34,7 +34,8 @@ where amount between 30000 and 31000;
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 
 ```sql
-
+select date, transaction_no, supplier_inv_no, description, amount from spends
+where description like '%fee%';
 ```
 
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
