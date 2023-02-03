@@ -41,7 +41,8 @@ where description like '%fee%';
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 
 ```sql
-
+select date, transaction_no, supplier_inv_no, description, amount from spends
+where description like '%Fee%';
 ```
 
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
