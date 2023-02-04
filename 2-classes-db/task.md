@@ -98,7 +98,7 @@ VALUES ('2021-4-1','Computer Hardware Dell',38104091,3780119655,16,7,18)
 SELECt date,SUM(amount) AS total_amount
 FROM spends
 GROUP BY date
-ORDER BY COUNT(amount);
+ORDER BY SUM(amount);
 
 ```
 
@@ -115,6 +115,10 @@ ORDER BY COUNT(amount);
 Can you work out how to do this?
 
 ```sql
+SELECT to_char(date,'Month yyyy') AS month,
+        to_char(SUM(amount),'£ 999,999,999') AS "Monthly Spend"
+FROM spends
+GROUP BY date;
 
 ```
 
