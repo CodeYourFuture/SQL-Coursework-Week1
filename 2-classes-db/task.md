@@ -35,6 +35,13 @@ homework=# SELECT date, transaction_no, description, amount FROM spends WHERE am
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
+homework=# SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description LIKE '%fee%';
+    date    | transaction_no | supplier_inv_no |                          description                           | amount 
+------------+----------------+-----------------+----------------------------------------------------------------+--------
+ 2021-03-01 |       37574010 | PML0051         | Agreement fee as set out in the Report for the Settlement Deed |  51113
+ 2021-04-01 |       37788824 | I000039418P     | Recruitment fee for international nurses                       |  34800
+ 2021-04-01 |       37828209 | 11829           | DAF - Professional fees                                        | 300000
+(3 rows)
 
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
