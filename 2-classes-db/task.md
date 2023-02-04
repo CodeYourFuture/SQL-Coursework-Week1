@@ -140,6 +140,12 @@ INSERT 0 1
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
 
+homework=# SELECT date, SUM(amount) FROM spends GROUP BY date;
+    date    |   sum    
+------------+----------
+ 2021-03-01 | 28674452
+ 2021-04-01 | 22927194
+(2 rows
 
 
 ```
@@ -154,7 +160,12 @@ INSERT 0 1
 Can you work out how to do this?
 
 ```sql
-
+homework=# SELECT date, SUM(amount) AS "Monthly Spend" FROM spends GROUP BY date;
+    date    | Monthly Spend 
+------------+---------------
+ 2021-03-01 |      28674452
+ 2021-04-01 |      22927194
+(2 rows)
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
