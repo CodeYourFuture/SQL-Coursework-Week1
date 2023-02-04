@@ -1,0 +1,3 @@
+select spends.date, suppliers.supplier, spends.description, spends.amount FROM spends 
+INNER JOIN suppliers On spends.supplier_id=suppliers.id
+INNER JOIN expense_areas ON spends.expense_area_id=expense_areas.id;
