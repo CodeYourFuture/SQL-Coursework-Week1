@@ -46,6 +46,16 @@ homework=# SELECT date, transaction_no, supplier_inv_no, description, amount FRO
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
+homework=# SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description LIKE '%Fee%';
+    date    | transaction_no | supplier_inv_no |     description      | amount 
+------------+----------------+-----------------+----------------------+--------
+ 2021-03-01 |       37600517 | I000038387P     | Overseas Nurses Fees |  34800
+ 2021-03-01 |       37750117 | T034177         | Consultant Fees      |  74996
+ 2021-03-01 |       37726776 | T034397         | Consultant Fees      | 461861
+ 2021-03-01 |       37669018 | T034456         | Consultant Fees      | 646944
+ 2021-03-01 |       37788777 | T034567         | Consultant Fees      | 423270
+ 2021-04-01 |       38014054 | 42914332        | Annual Fee           | 319646
+(6 rows)
 
 ```
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
