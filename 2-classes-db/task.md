@@ -62,7 +62,7 @@ INSERT INTO spends(date, description, transaction_no, supplier_inv_no,supplier_i
 ```
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
-
+SELECT date, SUM(amount) as total FROM spends GROUP BY date;
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
 ```
@@ -75,7 +75,7 @@ INSERT INTO spends(date, description, transaction_no, supplier_inv_no,supplier_i
 Can you work out how to do this?
 
 ```sql
-
+SELECT to_char(date, 'MONTHYYYY') as "Month", to_char(SUM(amount), 'L999G999G999') as "Monthly Spend" FROM spends GROUP BY date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
