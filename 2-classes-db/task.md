@@ -106,7 +106,13 @@ homework=# SELECT date, supplier_id, description, amount FROM spends INNER JOIN 
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 ```sql
 
-
+homework=# SELECT spends.date, suppliers.supplier, spends.description, spends.amount FROM ((spends INNER JOIN expense_areas ON spends.expense_area_id=expense_areas.id AND expense_areas.expense_area='Better Hospital Food') INNER JOIN suppliers ON spends.supplier_id=suppliers.id);
+    date    |            supplier             |         description         | amount 
+------------+---------------------------------+-----------------------------+--------
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 105000
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Additional Variations |  32558
+ 2021-03-01 | WORCESTERSHIRE HOSPITAL SPC PLC | Meals Volume                | 100000
+(3 rows)
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
     dated 1st April 2021
