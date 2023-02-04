@@ -21,6 +21,16 @@ To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 ```sql
+homework=# SELECT date, transaction_no, description, amount FROM spends WHERE amount BETWEEN 30000 AND 31000;
+    date    | transaction_no |                           description                            | amount 
+------------+----------------+------------------------------------------------------------------+--------
+ 2021-03-01 |       37755444 | Flexible endoscope Technical Service                             |  30238
+ 2021-03-01 |       37632601 | Support and Maintenance for Clinisys Winpath Pathology IT system |  30242
+ 2021-03-01 |       37675451 | Drugs for Spasticity clinics                                     |  30591
+ 2021-04-01 |       37854035 | CALL OFF PO - REMOTE ACCESS                                      |  30000
+ 2021-04-01 |       38014043 | Advisor Projects                                                 |  30040
+ 2021-04-01 |       37823809 | CALL OFF ORDER - NETWORKING                                      |  30942
+ 2021-04-01 |       37829728 | Linen services                                                   |  30990
 
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
