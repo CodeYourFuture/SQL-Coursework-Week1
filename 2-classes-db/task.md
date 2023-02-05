@@ -7,7 +7,7 @@ psql -d homework -f setup.sql
 This will create and populate a database called homework.
 
 It is based on real data from the government found at
-https://data.gov.uk/dataset/72eaec8e-0d32-4041-a553-87b852abee64/spend-over-25-000-in-worcestershire-acute-hospitals-nhs-trust
+https://data.gov.uk/dataset/72eaec8e-0d32-4041-a553-87b852abee64/spend-over-25-000-in-worcestershire-acute-hospitals-psnhs-trust
 
 You can work with it by running
 ```
@@ -21,7 +21,7 @@ To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 ```sql
-
+as
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
