@@ -89,7 +89,10 @@ group by date;
 Can you work out how to do this?
 
 ```sql
-
+select to_char(date,'Month yyyy') to month,
+        to_char(sum(amount),'£ 999,999,999') to "monthly_spend"
+from spends
+group by date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
