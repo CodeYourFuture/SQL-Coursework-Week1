@@ -12,6 +12,8 @@ https://data.gov.uk/dataset/72eaec8e-0d32-4041-a553-87b852abee64/spend-over-25-0
 You can work with it by running
 ```
 psql homework
+
+h
 ```
 ## Submission
 
