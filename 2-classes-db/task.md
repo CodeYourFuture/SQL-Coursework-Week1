@@ -64,6 +64,7 @@ ON suppliers.id = spends.supplier_id;
 
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
+```
     dated 1st April 2021
     with a description of 'Computer Hardware Dell'
     transaction number is 38104091 and the supplier's inv no is '3780119655'
