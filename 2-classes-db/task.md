@@ -70,7 +70,13 @@ To submit this homework write the correct commands after each question.
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
-
+"date"	"transaction_no"	"description"	"supplier_inv_no"	"amount"
+"2021-03-01"	37600517	"Overseas Nurses Fees"	"I000038387P"	34800
+"2021-03-01"	37750117	"Consultant Fees"	"T034177"	74996
+"2021-03-01"	37726776	"Consultant Fees"	"T034397"	461861
+"2021-03-01"	37669018	"Consultant Fees"	"T034456"	646944
+"2021-03-01"	37788777	"Consultant Fees"	"T034567"	423270
+"2021-04-01"	38014054	"Annual Fee"	"42914332"	319646
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
