@@ -2,7 +2,8 @@
 Run the following commands:
 ```
 createdb homework
-psql -d homework -f setup.sql
+
+
 ```
 This will create and populate a database called homework.
 
