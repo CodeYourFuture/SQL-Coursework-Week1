@@ -62,7 +62,9 @@ select date, transaction_no, supplier_inv_no, description , amount from spends
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 
 ```sql
-
+select date , supplier_id,description,amount from spends
+join expense_areas on spends.expense_area_id = expense_areas.id
+and expense_areas.expense_area='Better Hospital Food';
 ```
 
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
