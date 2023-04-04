@@ -28,18 +28,24 @@ To submit this homework write the correct commands after each question.
 
 ```sql
 SELECT date,transaction_no,description,amount FROM spends WHERE amount >= 30000 AND amount <= 31000;
+
+7 rows
 ```
 
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 
 ```sql
 SELECT date,transaction_no,supplier_inv_no,description,amount FROM spends WHERE description LIKE '%fee%';
+
+3 rows
 ```
 
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 
 ```sql
+SELECT date,transaction_no,supplier_inv_no,description,amount FROM spends WHERE description LIKE '%fee%';
 
+6 rows
 ```
 
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
