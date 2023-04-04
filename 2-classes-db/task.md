@@ -37,7 +37,7 @@ SELECT date,transaction_no,description,amount FROM spends WHERE amount >= 30000 
 ```sql
 SELECT date,transaction_no,supplier_inv_no,description,amount FROM spends WHERE description LIKE '%fee%';
 
-3 rows
+(3 rows)
 ```
 
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
@@ -45,13 +45,15 @@ SELECT date,transaction_no,supplier_inv_no,description,amount FROM spends WHERE 
 ```sql
 SELECT date,transaction_no,supplier_inv_no,description,amount FROM spends WHERE description LIKE '%fee%';
 
-6 rows
+(6 rows)
 ```
 
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
 
 ```sql
+SELECT date,transaction_no,supplier_inv_no,description,amount FROM spends WHERE LOWER(description) LIKE LOWER('%fee%');
 
+(9 rows)
 ```
 
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
