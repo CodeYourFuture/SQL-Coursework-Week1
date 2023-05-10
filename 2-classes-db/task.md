@@ -20,7 +20,8 @@ Below you will find a set of tasks for you to complete to consolidate and extend
 To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
-```sql
+```sql 
+SELECT date, transaction_no, description, amount FROM spends WHERE amount>30000 AND amount<31000 ;
 
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
