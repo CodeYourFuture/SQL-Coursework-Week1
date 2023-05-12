@@ -67,7 +67,7 @@ SELECT spends.date, spends.supplier_id, spends .description, spends .amount FROM
 SELECT date, supplier, description, amount
 FROM spends
 INNER JOIN suppliers ON spends.supplier_id = suppliers.id
-INNER JOIN expense_areasON spends.expense_area_id = expense_areas.id
+INNER JOIN expense_areas ON spends.expense_area_id = expense_areas.id
 WHERE expense_area='Better Hospital Food';
 ```
 
@@ -82,13 +82,14 @@ WHERE expense_area='Better Hospital Food';
     for £32,000.
 
 ```sql
-
+INSERT INTO spends (expense_type_id, expense_area_id, supplier_id, date, transaction_no, supplier_inv_no, description, amount)
+VALUES (7, 18, 16, CAST('2021-04-01' AS date), 38104091, 3780119655, 'Computer Hardware Dell', 32000);
 ```
 
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 
 ```sql
-
+SELECT date, SUM(amount) as total_amount_spent FROM spends GROUP BY date;
 ```
 
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
@@ -104,7 +105,9 @@ WHERE expense_area='Better Hospital Food';
 Can you work out how to do this?
 
 ```sql
-
+SELECT TO_CHAR(date, 'Month YYYY') AS "Month", CONCAT('£ ', TO_CHAR(SUM(amount), '999,999,999')) AS "Monthly Spend"
+FROM spends
+GROUP BY date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
