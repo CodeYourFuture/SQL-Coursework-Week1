@@ -90,7 +90,10 @@ WHERE expense_areas.expense_area = 'Better Hospital Food';
 ```
 Can you work out how to do this?
 
-```sql
+```
+SELECT  to_char(date, 'Month YYYY') AS Month,'£ ' || to_char(SUM(amount), 'FM999,999,999') AS "Monthly Spend" FROM spends
+GROUP BY to_char(date, 'Month YYYY')
+ORDER BY Month ASC;
 
 ```
 
