@@ -6,7 +6,7 @@ psql -d homework -f setup.sql
 ```
 This will create and populate a database called homework.
 
-It is based on real data from the government found at
+It is based on real data FROM the government found at
 https://data.gov.uk/dataset/72eaec8e-0d32-4041-a553-87b852abee64/spend-over-25-000-in-worcestershire-acute-hospitals-nhs-trust
 
 You can work with it by running
@@ -21,15 +21,17 @@ To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 ```sql
+SELECT date, transaction_no, description , amount FROM spends WHERE amount > 30000 and amount < 31000 ;                                                         
+
 
 ```
 ### 2. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee'.
 ```sql
-
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description like '%fee%';
 ```
 ### 3. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'Fee'.
 ```sql
-
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE description like '%Fee%';
 ```
 ### 4. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose description includes the word 'fee' (case insensitive). You will need to search 'https://www.postgresql.org/docs/' to solve this.
 ```sql
@@ -37,6 +39,7 @@ To submit this homework write the correct commands after each question.
 ```
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
 ```sql
+SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE amount = 25000 or amount = 30000 or amount = 35000 or amount = 40000;
 
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
