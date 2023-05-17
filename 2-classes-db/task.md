@@ -39,15 +39,30 @@ SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WH
 ```
 ### 5. Show the date, transaction_no, supplier_inv_no, description and amount for those transactions whose amount is £25,000, £30,000, £35,000 or £40,000.
 ```sql
-SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WHERE amount = 25000 or amount = 30000 or amount = 35000 or amount = 40000;
+SELECT date, transaction_no, supplier_inv_no, description, amount
+FROM spends
+WHERE amount IN (25000, 30000, 35000, 40000);
+
 
 ```
 ### 6. Show the date, the supplier_id, the description and the amount for transactions with the expense area of 'Better Hospital Food'. You could do a query to get the expense_area_id first then do a query to find the dates, supplier_ids and amounts. But it would be better to do this all in one query by linking the tables together using INNER JOINs.
 ```sql
+SELECT date, supplier_id, description, amount
+FROM spends s INNER JOIN expense_areas e ON (e.id = s.expense_area_id)
+WHERE expense_area = 'Better Hospital Food';
+
+SELECT id
+FROM expense_areas
+WHERE expense_area = 'Better Hospital Food';  
+SELECT date, supplier_id, description, amount
+FROM spends
+WHERE expense_area_id = 2;
 
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
 ```sql
+SELECT data, supplier name, description, amount FROM spends sp INNER JOIN suppliers su ON (sp.supplier_id = su.id)
+INNER JOIN expense_area = 'Better Hospital Food';
 
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
@@ -55,14 +70,19 @@ SELECT date, transaction_no, supplier_inv_no, description, amount FROM spends WH
     with a description of 'Computer Hardware Dell'
     transaction number is 38104091 and the supplier's inv no is '3780119655'
     the supplier is 'COMPUTACENTER (UK) LTD' (id 16)
-    the expense type is 'Computer Hardware Purch' (id 7)
+    the expense type is 'Computer Hardware Purch' (id 7) 
     the expense area is 'ICT Contingency' (id 18)
     for £32,000.
 ```sql
+INSERT INTO spends
+(data, description, transaction_on, supplier_inv_no, supplier_id, expense_type_id,expense_area_id, amount) VALUES ('2021-04-01', 'Computer Hardware Dell', 38104091, '3780119655', 16, 7, 18,32000);
 
 ```
 ### 9. If you examine the dates in the data, you will see they all are dated either 1st march 2021 or 1st April 2021. So if we group on the the date, there will only be two groups. Show the date and the total amount spent on that date for these two dates by using a GROUP BY clause.
 ```sql
+SELECT data,sum(amount)
+FROM spends
+GROUP BY date;
 
 ```
 ### 10. (optional) Great we now know the monthly spend. But it didn't look that good. So I've changed my SELECT query to output this instead:
