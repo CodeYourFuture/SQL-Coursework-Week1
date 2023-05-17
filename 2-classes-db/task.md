@@ -21,9 +21,12 @@ To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
 ```sql
+-- SELECT date, transaction_no, description, amount 
+-- FROM spends 
+-- BETWEEN 30000 AND 31000;
 SELECT date, transaction_no, description, amount 
 FROM spends 
-BETWEEN 30000 AND 31000;
+WHERE (amount >= 30000 AND amount <= 31000);
 ```
 ```
 
