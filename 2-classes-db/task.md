@@ -20,7 +20,7 @@ Below you will find a set of tasks for you to complete to consolidate and extend
 To submit this homework write the correct commands after each question.
 
 ### 1. Show the date, transaction_no, description and amount for those transactions whose amount is between £30,000 and £31,000.
-```  select date, transaction_no, description, amount from spends where amount BETWEEN 30000 AND 31000;
+```  SELECT date, transaction_no, description, amount FROM spends WHERE amount BETWEEN 30000 AND 31000;
 
 
 ```
@@ -45,7 +45,7 @@ To submit this homework write the correct commands after each question.
 
 ```
 ### 7. Show the date, supplier name, description and amount for transactions with the expense area of 'Better Hospital Food'. You will need to INNER JOIN another table to be able to do this.
-``` SELECT sup.supplier, s.date, s.description, s.amount FROM spends s INNER JOIN suppliers sup ON s.supplier_id = sup.id INNER JOIN expense_areas ea ON ea.id = s.expense_area_id WHERE expense_area = 'Better Hospital Food';
+``` SELECT sup.supplier, s.date, s.description, s.amount FROM spends s INNER JOIN suppliers sup ON s.supplier_id = sup.id INNER JOIN expense_areas ea ON ea.id = s.expense_area_id WHERE expense_area = 'Better Hospital Food'; 
 
 ```
 ### 8. We have just received a late invoice for April! Add a new row to the spends table:
@@ -76,7 +76,7 @@ Can you work out how to do this?
 
 //I cannot figure out how to re-date to get month and year only. The below query is the best I could do!!//
 
- SELECT date AS month, SUM(amount) AS monthly_spend FROM spends WHERE date IN ('2021-03-01', '2021-04-01') GROUP BY month;
+ SELECT format(date, mm) AS Month,  SUM(amount) AS Monthly_Spend FROM spends WHERE date IN ('2021-03-01', '2021-04-01') GROUP BY month;
    month    | monthly_spend 
 ------------+---------------
  2021-03-01 |      28674452
