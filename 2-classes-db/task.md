@@ -121,7 +121,10 @@ SELECT  date,
 Can you work out how to do this?
 
 ```sql
-
+SELECT  TO_CHAR(date, 'Month YYYY') AS "Month",
+        TO_CHAR((sum(amount)), '£ 00,000,000') AS "Monthly Spend"
+            FROM spends
+            GROUP BY date;
 ```
 
 When you have finished all of the questions - open a pull request with your answers to the `SQL-Coursework-Week1` repository.
